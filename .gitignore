@@ -1,0 +1,12 @@
+# Build artifacts
+grafo
+*.o
+*.obj
+*.exe
+
+# macOS metadata
+.DS_Store
+
+# Editor backups
+*~
+*.swp
