@@ -2,12 +2,15 @@
 #include <cctype>
 #include <chrono>
 #include <cmath>
+#include <clocale>
+#include <codecvt>
 #include <exception>
 #include <fstream>
 #include <functional>
 #include <iomanip>
 #include <iostream>
 #include <limits>
+#include <locale>
 #include <numeric>
 #include <queue>
 #include <set>
@@ -17,6 +20,7 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
+#include <cwchar>
 
 using namespace std;
 
@@ -71,6 +75,52 @@ bool ehNumeroInteiro(const string &texto) {
     }
   }
   return true;
+}
+
+bool ehEmojiLargo(char32_t ch) {
+  if (ch >= 0x1F300 && ch <= 0x1FAFF)
+    return true;
+  if (ch >= 0x1F1E6 && ch <= 0x1F1FF)
+    return true; // bandeiras
+  if (ch >= 0x2600 && ch <= 0x26FF)
+    return true;
+  if (ch >= 0x2700 && ch <= 0x27BF)
+    return true;
+  return false;
+}
+
+int larguraVisual(const string &texto) {
+  static wstring_convert<codecvt_utf8<char32_t>, char32_t> converter;
+  int largura = 0;
+  u32string u32 = converter.from_bytes(texto);
+  for (char32_t ch : u32) {
+    if (ch == 0xFE0F)
+      continue; // variation selector
+    int w = wcwidth(static_cast<wchar_t>(ch));
+    if (w < 0)
+      w = 1;
+    if (w == 1 && ehEmojiLargo(ch))
+      w = 2;
+    largura += w;
+  }
+  return largura;
+}
+
+string alinharMenu(const string &texto, int largura) {
+  int larguraTexto = larguraVisual(texto);
+  int espacos = max(0, largura - larguraTexto);
+  return texto + string(espacos, ' ');
+}
+
+string repetirSimbolo(const string &valor, int vezes) {
+  string resultado;
+  if (vezes <= 0)
+    return resultado;
+  resultado.reserve(static_cast<size_t>(valor.size()) * vezes);
+  for (int i = 0; i < vezes; ++i) {
+    resultado += valor;
+  }
+  return resultado;
 }
 } // namespace
 
@@ -257,22 +307,28 @@ public:
 
   void mostrarMenuPrincipal() {
     cout << YELLOW << "\n📋 MENU PRINCIPAL:\n" << RESET;
-    cout << "┌────────────────────────────────────────────────┐\n";
-    cout << "│ [1] 📂 Ler dados do arquivo grafo.txt         │\n";
-    cout << "│ [2] 💾 Gravar dados no arquivo grafo.txt      │\n";
-    cout << "│ [3] ➕ Inserir vértice (país)                 │\n";
-    cout << "│ [4] 🔗 Inserir aresta (conexão)               │\n";
-    cout << "│ [5] ➖ Remover vértice                        │\n";
-    cout << "│ [6] ✂️  Remover aresta                        │\n";
-    cout << "│ [7] 📄 Mostrar conteúdo do arquivo            │\n";
-    cout << "│ [8] 📊 Mostrar grafo (lista)                  │\n";
-    cout << "│ [9] 🔍 Apresentar conexidade e reduzido       │\n";
-    cout << "│                                                │\n";
-    cout << "│ [10] 📈 Estatísticas e análises               │\n";
-    cout << "│ [11] ✈️  Buscar rota de expansão              │\n";
-    cout << "│ [12] 🏷️  Buscar país por ID/Nome             │\n";
-    cout << "│ [0] 🚪 Encerrar aplicação                     │\n";
-    cout << "└────────────────────────────────────────────────┘\n";
+    constexpr int larguraInterna = 52;
+    const string linha = repetirSimbolo("─", larguraInterna);
+    auto escreverLinha = [&](const string &conteudo) {
+      cout << "│ " << alinharMenu(conteudo, larguraInterna - 2) << " │\n";
+    };
+
+    cout << "┌" << linha << "┐\n";
+    escreverLinha("[1] 📂 Ler dados do arquivo grafo.txt");
+    escreverLinha("[2] 💾 Gravar dados no arquivo grafo.txt");
+    escreverLinha("[3] ➕ Inserir vértice (país)");
+    escreverLinha("[4] 🔗 Inserir aresta (conexão)");
+    escreverLinha("[5] ➖ Remover vértice");
+    escreverLinha("[6] ✂️ Remover aresta");
+    escreverLinha("[7] 📄 Mostrar conteúdo do arquivo");
+    escreverLinha("[8] 📊 Mostrar grafo (lista)");
+    escreverLinha("[9] 🔍 Apresentar conexidade e reduzido");
+    escreverLinha("");
+    escreverLinha("[10] 📈 Estatísticas e análises");
+    escreverLinha("[11] ✈️ Buscar rota de expansão");
+    escreverLinha("[12] 🏷️ Buscar país por ID/Nome");
+    escreverLinha("[0] 🚪 Encerrar aplicação");
+    cout << "└" << linha << "┘\n";
   }
 
   void mostrarConteudoArquivo(const string &nomeArquivo) {
@@ -726,6 +782,15 @@ public:
       }
     }
 
+    sort(ordemGrupos.begin(), ordemGrupos.end(), [&](const string &a,
+                                                     const string &b) {
+      return nomeParaGrupo(a) < nomeParaGrupo(b);
+    });
+    indiceGrupo.clear();
+    for (size_t idx = 0; idx < ordemGrupos.size(); ++idx) {
+      indiceGrupo[ordemGrupos[idx]] = static_cast<int>(idx);
+    }
+
     int gCount = static_cast<int>(ordemGrupos.size());
     vector<vector<int>> matriz(gCount, vector<int>(gCount, 0));
     int maxValor = 0;
@@ -748,8 +813,9 @@ public:
     }
 
     const vector<string> gradacao = {"···", "░░░", "▒▒▒", "▓▓▓", "███"};
-    int rotuloLargura = 18;
-    int celulaLargura = 14;
+    const int rotuloLargura = 20;
+    const int celulaLargura = 17;
+    const int barraLargura = 4;
     const string linha = u8"─";
     const string coluna = u8"│";
     const string cantoSupEsq = u8"┌";
@@ -770,11 +836,41 @@ public:
 
     auto desenharLinha = [&](const string &left, const string &mid,
                              const string &right) {
-      cout << "    " << left << repetir(linha, rotuloLargura);
+      cout << "    " << left << repetir(linha, rotuloLargura + 2);
       for (int c = 0; c < gCount; ++c) {
-        cout << mid << repetir(linha, celulaLargura);
+        cout << mid << repetir(linha, celulaLargura + 2);
       }
       cout << right << '\n';
+    };
+
+    auto campo = [&](const string &texto, int largura) {
+      ostringstream oss;
+      oss << left << setw(largura) << texto;
+      string base = oss.str();
+      return string(" ") + base + " ";
+    };
+
+    auto formatarCelula = [&](int valor) {
+      double proporcao = 0.0;
+      int escala = 0;
+      if (valor > 0 && maxValor > 0) {
+        proporcao = static_cast<double>(valor) / maxValor;
+        escala = static_cast<int>(ceil(proporcao * 4.0));
+        escala = max(1, min(4, escala));
+      }
+      int preenchidos = 0;
+      if (valor > 0 && maxValor > 0) {
+        preenchidos = static_cast<int>(round(proporcao * barraLargura));
+        preenchidos = max(1, min(barraLargura, preenchidos));
+      }
+      string barra = "[";
+      barra += string(preenchidos, '=');
+      barra += string(barraLargura - preenchidos, ' ');
+      barra += "]";
+
+      ostringstream oss;
+      oss << setw(6) << valor << " " << barra << " " << gradacao[escala];
+      return oss.str();
     };
 
     cout << CYAN << "\n🌐 MATRIZ DE CONEXÕES ENTRE GRUPOS\n" << RESET;
@@ -785,43 +881,31 @@ public:
     }
 
     desenharLinha(cantoSupEsq, cruzTopo, cantoSupDir);
-    cout << "    " << coluna << left << setw(rotuloLargura) << "Grupo origem"
-         << right;
+    cout << "    " << coluna << campo("Grupo origem", rotuloLargura);
     for (const auto &grupo : ordemGrupos) {
-      cout << coluna << left << setw(celulaLargura) << nomeParaGrupo(grupo)
-           << right;
+      cout << coluna << campo(nomeParaGrupo(grupo), celulaLargura);
     }
-    cout << coluna << "\n";
+    cout << coluna << '\n';
     desenharLinha(u8"├", cruzMeio, u8"┤");
 
     for (int i = 0; i < gCount; ++i) {
-      cout << "    " << coluna << left << setw(rotuloLargura)
-           << nomeParaGrupo(ordemGrupos[i]) << right;
+      cout << "    " << coluna << " " << corParaGrupo(ordemGrupos[i]) << left
+           << setw(rotuloLargura) << nomeParaGrupo(ordemGrupos[i]) << RESET
+           << right << " ";
       for (int j = 0; j < gCount; ++j) {
-        int valor = matriz[i][j];
-        int escala = 0;
-        if (valor > 0 && maxValor > 0) {
-          escala = static_cast<int>(ceil(valor * 4.0 / maxValor));
-          escala = min(escala, 4);
-        }
-        string calor = gradacao[escala];
-        ostringstream oss;
-        oss << setw(6) << valor;
-        string texto = oss.str();
-        texto += " ";
-        texto += calor;
-        while (texto.size() < static_cast<size_t>(celulaLargura))
-          texto += ' ';
-        cout << coluna << texto;
+        cout << coluna << campo(formatarCelula(matriz[i][j]), celulaLargura);
       }
-      cout << coluna << "\n";
+      cout << coluna << '\n';
       if (i + 1 < gCount)
         desenharLinha(u8"├", cruzMeio, u8"┤");
     }
     desenharLinha(cantoInfEsq, cruzBase, cantoInfDir);
 
-    cout << CYAN << "Legenda:" << RESET << " ███ forte  ▓▓▓ moderada  ▒▒▒ leve  ░░░ fraca  ··· sem ligação"
-         << '\n';
+    cout << CYAN << "    Legenda:" << RESET << " " << BOLD << gradacao[4]
+         << RESET << " forte  " << gradacao[3] << " moderada  "
+         << gradacao[2] << " leve  " << gradacao[1] << " fraca  "
+         << gradacao[0] << " sem ligação" << '\n';
+    cout << "    " << "Valores normalizados pela maior conexão do mapa." << '\n';
   }
 
   void mostrarGruposLinguisticos() {
@@ -1118,6 +1202,7 @@ int solicitarVertice(Grafo &grafo, const string &prompt) {
 }
 
 int main() {
+  setlocale(LC_ALL, "");
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
