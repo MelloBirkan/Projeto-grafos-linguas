@@ -18,6 +18,7 @@
 #include <string>
 #include <thread>
 #include <unordered_map>
+#include <unordered_set>
 #include <utility>
 #include <vector>
 #include <cwchar>
@@ -967,34 +968,40 @@ public:
     }
 
     // cálculo de "pontes" focado em países (força para fora do grupo)
-    // Mostrar países com maior força de comunicação fora do próprio grupo
-    vector<pair<int, int>> fora; // (somaFora, id)
+    // Mostrar países com maior número de conexões para fora do próprio grupo
+    vector<pair<int, int>> fora; // (numPaisesFora, id)
     fora.reserve(numVertices);
     for (int v = 0; v < numVertices; ++v) {
-      int somaFora = 0;
       const string &g = grupoVertices[v];
+      int numFora = 0;
+      // contar vizinhos diretos de grupos diferentes (únicos)
+      std::unordered_set<int> vistos;
       for (const auto &e : adj[v]) {
-        if (grupoVertices[e.first] != g) somaFora += e.second;
+        int u = e.first;
+        if (grupoVertices[u] != g && !vistos.count(u)) {
+          vistos.insert(u);
+          ++numFora;
+        }
       }
-      fora.push_back({somaFora, v});
+      fora.push_back({numFora, v});
     }
     sort(fora.begin(), fora.end(), [&](const pair<int,int>& a, const pair<int,int>& b){
       if (a.first != b.first) return a.first > b.first;
       return nomeVertices[a.second] < nomeVertices[b.second];
     });
-    cout << "\n🌉 PAÍSES QUE MELHOR SE COMUNICAM FORA DO SEU GRUPO:\n";
+    cout << "\n🌉 PAÍSES COM MAIS CONEXÕES FORA DO SEU GRUPO:\n";
     int mostrar = 0;
-    int maxSoma = fora.empty() ? 0 : max(0, fora.front().first);
+    int maxQtd = fora.empty() ? 0 : max(0, fora.front().first);
     for (size_t i = 0; i < fora.size() && mostrar < 10; ++i) {
-      int soma = fora[i].first;
-      if (soma <= 0) break;
+      int qtd = fora[i].first;
+      if (qtd <= 0) break;
       int id = fora[i].second;
-      int barras = maxSoma > 0 ? static_cast<int>(round(20.0 * soma / maxSoma)) : 0;
+      int barras = maxQtd > 0 ? static_cast<int>(round(20.0 * qtd / maxQtd)) : 0;
       barras = min(20, max(1, barras));
       cout << setw(12) << nomeVertices[id] << " [";
       for (int b = 0; b < barras; ++b) cout << "█";
       for (int b = barras; b < 20; ++b) cout << ' ';
-      cout << "] " << soma << " fora do grupo\n";
+      cout << "] " << qtd << " países fora do seu grupo\n";
       ++mostrar;
     }
 
