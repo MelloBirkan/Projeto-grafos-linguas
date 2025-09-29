@@ -1,3 +1,10 @@
+/*
+╔════════════════════════════════════════════════════════════╗
+║ Feito pelos alunos:                                              ║
+║ • Marcello Gonzatto Birkan (10381938)                            ║
+║ • Daniela Brazolin Flauto (10395891)                             ║
+╚════════════════════════════════════════════════════════════╝
+*/
 #include <algorithm>
 #include <cctype>
 #include <chrono>

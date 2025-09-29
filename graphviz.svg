@@ -1,0 +1,1602 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1275pt" height="1142pt" viewBox="0.00 0.00 1275.00 1142.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1138)">
+<title>ExpansaoLinguistica</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1138 1270.51,-1138 1270.51,4 -4,4"/>
+<!-- 0 -->
+<g id="node1" class="node">
+<title>0</title>
+<ellipse fill="#2ecc71" stroke="black" cx="266.97" cy="-327.03" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="266.97" y="-324.03" font-family="Times,serif" font-size="10.00">Brasil</text>
+</g>
+<!-- 1 -->
+<g id="node2" class="node">
+<title>1</title>
+<ellipse fill="#2ecc71" stroke="black" cx="419.17" cy="-301.74" rx="30" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="419.17" y="-298.74" font-family="Times,serif" font-size="10.00">Portugal</text>
+</g>
+<!-- 0&#45;&#45;1 -->
+<g id="edge1" class="edge">
+<title>0--1</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M293.48,-322.62C320.39,-318.15 361.96,-311.24 389.85,-306.61"/>
+<text xml:space="preserve" text-anchor="middle" x="335.3" y="-317.08" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<ellipse fill="#2ecc71" stroke="black" cx="459.41" cy="-84.96" rx="27.32" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="459.41" y="-81.96" font-family="Times,serif" font-size="10.00">Angola</text>
+</g>
+<!-- 0&#45;&#45;2 -->
+<g id="edge2" class="edge">
+<title>0--2</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M279.89,-310.77C314.95,-266.67 411.55,-145.16 446.54,-101.15"/>
+<text xml:space="preserve" text-anchor="middle" x="359.24" y="-208.33" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<ellipse fill="#2ecc71" stroke="black" cx="581.01" cy="-84.33" rx="41.69" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="581.01" y="-81.33" font-family="Times,serif" font-size="10.00">Moçambique</text>
+</g>
+<!-- 0&#45;&#45;3 -->
+<g id="edge3" class="edge">
+<title>0--3</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M284.75,-313.28C338.99,-271.37 502.13,-145.29 560.21,-100.41"/>
+<text xml:space="preserve" text-anchor="middle" x="417.04" y="-210.36" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<ellipse fill="#2ecc71" stroke="black" cx="536.4" cy="-293.27" rx="38.51" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="536.4" y="-290.27" font-family="Times,serif" font-size="10.00">Cabo Verde</text>
+</g>
+<!-- 0&#45;&#45;4 -->
+<g id="edge4" class="edge">
+<title>0--4</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M294.34,-328.27C324.92,-329.22 375.84,-329.5 419.17,-323.5 448.53,-319.43 481.11,-310.67 504.46,-303.62"/>
+<text xml:space="preserve" text-anchor="middle" x="415.18" y="-325.9" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<ellipse fill="#2ecc71" stroke="black" cx="639.63" cy="-289.42" rx="42.69" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="639.63" y="-286.42" font-family="Times,serif" font-size="10.00">Guiné-Bissau</text>
+</g>
+<!-- 0&#45;&#45;5 -->
+<g id="edge5" class="edge">
+<title>0--5</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M294.35,-328.42C347.72,-330.47 469.03,-331.85 567.48,-308.65 579.34,-305.86 592.22,-302.52 603.77,-299.42"/>
+<text xml:space="preserve" text-anchor="middle" x="446.06" y="-328.18" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<ellipse fill="#2ecc71" stroke="black" cx="501" cy="-426.14" rx="34.85" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="501" y="-423.14" font-family="Times,serif" font-size="10.00">São Tomé</text>
+</g>
+<!-- 0&#45;&#45;6 -->
+<g id="edge6" class="edge">
+<title>0--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M289.83,-336.71C333.19,-355.07 427.19,-394.88 473.74,-414.6"/>
+<text xml:space="preserve" text-anchor="middle" x="376.59" y="-377.55" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<ellipse fill="#2ecc71" stroke="black" cx="45.07" cy="-111.4" rx="39.68" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="45.07" y="-108.4" font-family="Times,serif" font-size="10.00">Timor-Leste</text>
+</g>
+<!-- 0&#45;&#45;7 -->
+<g id="edge7" class="edge">
+<title>0--7</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M251.36,-311.86C211.12,-272.75 104.02,-168.68 62.17,-128.01"/>
+<text xml:space="preserve" text-anchor="middle" x="153.37" y="-222.92" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 8 -->
+<g id="node9" class="node">
+<title>8</title>
+<ellipse fill="#2ecc71" stroke="black" cx="297.23" cy="-88.38" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="297.23" y="-85.38" font-family="Times,serif" font-size="10.00">Macau</text>
+</g>
+<!-- 0&#45;&#45;8 -->
+<g id="edge8" class="edge">
+<title>0--8</title>
+<path fill="none" stroke="#27ae60" stroke-width="1.5" d="M269.29,-308.7C274.92,-264.27 289.26,-151.26 294.9,-106.77"/>
+<text xml:space="preserve" text-anchor="middle" x="278.09" y="-210.16" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 9 -->
+<g id="node10" class="node">
+<title>9</title>
+<ellipse fill="#f1c40f" stroke="black" cx="253.28" cy="-502.56" rx="33.67" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="253.28" y="-499.56" font-family="Times,serif" font-size="10.00">Argentina</text>
+</g>
+<!-- 0&#45;&#45;9 -->
+<g id="edge9" class="edge">
+<title>0--9</title>
+<path fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="5,2" d="M265.53,-345.48C262.9,-379.19 257.35,-450.37 254.72,-484.09"/>
+<text xml:space="preserve" text-anchor="middle" x="256.12" y="-417.18" font-family="Times,serif" font-size="8.00">30</text>
+</g>
+<!-- 18 -->
+<g id="node19" class="node">
+<title>18</title>
+<ellipse fill="#f1c40f" stroke="black" cx="31.94" cy="-380.99" rx="30.66" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="31.94" y="-377.99" font-family="Times,serif" font-size="10.00">Paraguai</text>
+</g>
+<!-- 0&#45;&#45;18 -->
+<g id="edge10" class="edge">
+<title>0--18</title>
+<path fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="5,2" d="M241.37,-332.9C197.23,-343.04 107.09,-363.73 60.8,-374.36"/>
+<text xml:space="preserve" text-anchor="middle" x="147.89" y="-355.85" font-family="Times,serif" font-size="8.00">35</text>
+</g>
+<!-- 19 -->
+<g id="node20" class="node">
+<title>19</title>
+<ellipse fill="#f1c40f" stroke="black" cx="33.15" cy="-584.79" rx="29.33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="33.15" y="-581.79" font-family="Times,serif" font-size="10.00">Uruguai</text>
+</g>
+<!-- 0&#45;&#45;19 -->
+<g id="edge11" class="edge">
+<title>0--19</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M252.69,-342.76C210.95,-388.78 89.42,-522.76 47.54,-568.93"/>
+<text xml:space="preserve" text-anchor="middle" x="146.17" y="-458.19" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 1&#45;&#45;2 -->
+<g id="edge12" class="edge">
+<title>1--2</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M422.53,-283.63C430.11,-242.83 448.44,-144.07 456.03,-103.17"/>
+<text xml:space="preserve" text-anchor="middle" x="433.28" y="-195.84" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge13" class="edge">
+<title>1--3</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M431.6,-285.04C461.58,-244.77 537.62,-142.62 568.09,-101.69"/>
+<text xml:space="preserve" text-anchor="middle" x="493.66" y="-196.01" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 1&#45;&#45;4 -->
+<g id="edge14" class="edge">
+<title>1--4</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M449.36,-299.56C464.15,-298.49 482.12,-297.19 497.89,-296.05"/>
+<text xml:space="preserve" text-anchor="middle" x="467.26" y="-300.23" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 1&#45;&#45;5 -->
+<g id="edge15" class="edge">
+<title>1--5</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M447.99,-307.56C471.67,-311.73 506.12,-316.38 536.4,-315.02 550.49,-314.39 553.76,-311.89 567.48,-308.65 579.34,-305.86 592.22,-302.52 603.77,-299.42"/>
+<text xml:space="preserve" text-anchor="middle" x="530.42" y="-317.42" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 1&#45;&#45;6 -->
+<g id="edge16" class="edge">
+<title>1--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M430.38,-318.78C445.96,-342.47 474.01,-385.12 489.66,-408.91"/>
+<text xml:space="preserve" text-anchor="middle" x="453.99" y="-366.21" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 1&#45;&#45;7 -->
+<g id="edge17" class="edge">
+<title>1--7</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M396.05,-289.98C330.26,-256.5 142.24,-160.84 71.99,-125.09"/>
+<text xml:space="preserve" text-anchor="middle" x="231.69" y="-210.79" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 1&#45;&#45;8 -->
+<g id="edge18" class="edge">
+<title>1--8</title>
+<path fill="none" stroke="#27ae60" stroke-width="3" d="M409.19,-284.28C386.21,-244.07 329.79,-145.35 307.01,-105.49"/>
+<text xml:space="preserve" text-anchor="middle" x="352.02" y="-197.15" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 11 -->
+<g id="node12" class="node">
+<title>11</title>
+<ellipse fill="#f1c40f" stroke="black" cx="536.74" cy="-633.62" rx="29.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="536.74" y="-630.62" font-family="Times,serif" font-size="10.00">Espanha</text>
+</g>
+<!-- 1&#45;&#45;11 -->
+<g id="edge19" class="edge">
+<title>1--11</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="1,5" d="M423.98,-319.91C430.79,-344.56 444.29,-389.69 461.01,-426.14 485.6,-479.78 510.71,-484.15 528.74,-540.34 536.78,-565.41 537.85,-596.11 537.55,-615.27"/>
+<text xml:space="preserve" text-anchor="middle" x="480.27" y="-458.26" font-family="Times,serif" font-size="8.00">20</text>
+</g>
+<!-- 40 -->
+<g id="node41" class="node">
+<title>40</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1008.26" cy="-512.64" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1008.26" y="-509.64" font-family="Times,serif" font-size="10.00">França</text>
+</g>
+<!-- 1&#45;&#45;40 -->
+<g id="edge20" class="edge">
+<title>1--40</title>
+<path fill="none" stroke="black" stroke-width="0.2" stroke-dasharray="1,5" d="M448.33,-307.13C525.29,-322.04 739.11,-367.94 901.91,-445.56 934.43,-461.06 969.21,-484.45 989.82,-499.11"/>
+<text xml:space="preserve" text-anchor="middle" x="723.17" y="-380.28" font-family="Times,serif" font-size="8.00">15</text>
+</g>
+<!-- 2&#45;&#45;3 -->
+<g id="edge21" class="edge">
+<title>2--3</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M487.01,-84.82C502.42,-84.74 521.95,-84.64 539.2,-84.55"/>
+<text xml:space="preserve" text-anchor="middle" x="508.41" y="-87.09" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 2&#45;&#45;4 -->
+<g id="edge22" class="edge">
+<title>2--4</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M465.98,-102.72C480.49,-141.98 515.15,-235.77 529.74,-275.26"/>
+<text xml:space="preserve" text-anchor="middle" x="493.83" y="-191.3" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 2&#45;&#45;5 -->
+<g id="edge23" class="edge">
+<title>2--5</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M473.26,-100.66C506.39,-138.26 590.06,-233.18 624.48,-272.23"/>
+<text xml:space="preserve" text-anchor="middle" x="544.38" y="-188.3" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 2&#45;&#45;6 -->
+<g id="edge24" class="edge">
+<title>2--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M461.65,-103.3C468.87,-162.54 491.51,-348.34 498.75,-407.71"/>
+<text xml:space="preserve" text-anchor="middle" x="476.19" y="-257.86" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 3&#45;&#45;4 -->
+<g id="edge25" class="edge">
+<title>3--4</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M577.13,-102.51C568.69,-142.02 548.76,-235.37 540.31,-274.99"/>
+<text xml:space="preserve" text-anchor="middle" x="554.73" y="-191.11" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 3&#45;&#45;5 -->
+<g id="edge26" class="edge">
+<title>3--5</title>
+<path fill="none" stroke="#27ae60" stroke-width="1.5" d="M586.21,-102.53C597.34,-141.45 623.33,-232.38 634.44,-271.26"/>
+<text xml:space="preserve" text-anchor="middle" x="606.33" y="-189.31" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 3&#45;&#45;6 -->
+<g id="edge27" class="edge">
+<title>3--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M570.04,-102.17C549.28,-137.2 505.22,-218.11 492.45,-293.27 485.55,-333.83 492.38,-382.23 497.18,-407.95"/>
+<text xml:space="preserve" text-anchor="middle" x="500.06" y="-248.27" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 35 -->
+<g id="node36" class="node">
+<title>35</title>
+<ellipse fill="#3498db" stroke="black" cx="599.28" cy="-413.27" rx="40.68" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="599.28" y="-410.27" font-family="Times,serif" font-size="10.00">África do Sul</text>
+</g>
+<!-- 3&#45;&#45;35 -->
+<g id="edge28" class="edge">
+<title>3--35</title>
+<path fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="5,2" d="M581.82,-102.72C583.42,-138.62 587.18,-220.55 591.14,-289.42 593.3,-326.85 596.28,-370.61 597.97,-394.81"/>
+<text xml:space="preserve" text-anchor="middle" x="584.91" y="-251.25" font-family="Times,serif" font-size="8.00">30</text>
+</g>
+<!-- 4&#45;&#45;5 -->
+<g id="edge29" class="edge">
+<title>4--5</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M575.13,-291.82C582.23,-291.56 589.67,-291.28 596.87,-291.01"/>
+<text xml:space="preserve" text-anchor="middle" x="581.96" y="-293.82" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 4&#45;&#45;6 -->
+<g id="edge30" class="edge">
+<title>4--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="2.5" d="M531.55,-311.47C524.77,-336.91 512.54,-382.84 505.79,-408.16"/>
+<text xml:space="preserve" text-anchor="middle" x="514.66" y="-362.26" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 5&#45;&#45;6 -->
+<g id="edge31" class="edge">
+<title>5--6</title>
+<path fill="none" stroke="#27ae60" stroke-width="2" d="M622.63,-306.18C595.73,-332.71 543.71,-384.01 517.27,-410.09"/>
+<text xml:space="preserve" text-anchor="middle" x="565.78" y="-360.7" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 45 -->
+<g id="node46" class="node">
+<title>45</title>
+<ellipse fill="#9b59b6" stroke="black" cx="985.91" cy="-837.43" rx="28.66" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="985.91" y="-834.43" font-family="Times,serif" font-size="10.00">Senegal</text>
+</g>
+<!-- 5&#45;&#45;45 -->
+<g id="edge32" class="edge">
+<title>5--45</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M652.92,-306.97C671.63,-331.89 706.5,-379.17 733.86,-421.05 764.41,-467.81 773.33,-479.01 798.07,-529.08 809.84,-552.91 808.04,-561.02 820.33,-584.59 869.34,-678.57 944.1,-781.66 973.46,-820.97"/>
+<text xml:space="preserve" text-anchor="middle" x="807.53" y="-566.9" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 7&#45;&#45;8 -->
+<g id="edge33" class="edge">
+<title>7--8</title>
+<path fill="none" stroke="#27ae60" stroke-width="1.5" d="M84.47,-107.8C136.14,-103.09 225.44,-94.93 270.12,-90.86"/>
+<text xml:space="preserve" text-anchor="middle" x="175.92" y="-101.49" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 10 -->
+<g id="node11" class="node">
+<title>10</title>
+<ellipse fill="#f1c40f" stroke="black" cx="519.42" cy="-738.6" rx="28.33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="519.42" y="-735.6" font-family="Times,serif" font-size="10.00">México</text>
+</g>
+<!-- 9&#45;&#45;10 -->
+<g id="edge34" class="edge">
+<title>9--10</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M270.74,-518.05C319.2,-561.02 454.89,-681.37 502.59,-723.67"/>
+<text xml:space="preserve" text-anchor="middle" x="382.95" y="-623.51" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 9&#45;&#45;11 -->
+<g id="edge35" class="edge">
+<title>9--11</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M282.51,-511.8C313.35,-521.91 363.09,-539.25 404.27,-558.4 445.04,-577.36 490.08,-604.31 515.74,-620.28"/>
+<text xml:space="preserve" text-anchor="middle" x="400.39" y="-560.86" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 13 -->
+<g id="node14" class="node">
+<title>13</title>
+<ellipse fill="#f1c40f" stroke="black" cx="51.53" cy="-1050.35" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="51.53" y="-1047.35" font-family="Times,serif" font-size="10.00">Chile</text>
+</g>
+<!-- 9&#45;&#45;13 -->
+<g id="edge36" class="edge">
+<title>9--13</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M246.68,-520.48C216.12,-603.45 88.53,-949.89 58.08,-1032.57"/>
+<text xml:space="preserve" text-anchor="middle" x="148.34" y="-779.03" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 14 -->
+<g id="node15" class="node">
+<title>14</title>
+<ellipse fill="#f1c40f" stroke="black" cx="452.55" cy="-640.23" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="452.55" y="-637.23" font-family="Times,serif" font-size="10.00">Peru</text>
+</g>
+<!-- 9&#45;&#45;14 -->
+<g id="edge37" class="edge">
+<title>9--14</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M269.66,-518.49C289.05,-536.87 322.82,-567.35 355.15,-589.17 379.36,-605.51 409.42,-620.56 429.69,-630.02"/>
+<text xml:space="preserve" text-anchor="middle" x="351.16" y="-591.58" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 15 -->
+<g id="node16" class="node">
+<title>15</title>
+<ellipse fill="#f1c40f" stroke="black" cx="34.99" cy="-785.79" rx="34.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="34.99" y="-782.79" font-family="Times,serif" font-size="10.00">Venezuela</text>
+</g>
+<!-- 9&#45;&#45;15 -->
+<g id="edge38" class="edge">
+<title>9--15</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M240.28,-519.43C201.55,-569.69 87.2,-718.05 48.2,-768.65"/>
+<text xml:space="preserve" text-anchor="middle" x="140.34" y="-646.31" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 16 -->
+<g id="node17" class="node">
+<title>16</title>
+<ellipse fill="#f1c40f" stroke="black" cx="379.71" cy="-573.79" rx="29.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="379.71" y="-570.79" font-family="Times,serif" font-size="10.00">Equador</text>
+</g>
+<!-- 9&#45;&#45;16 -->
+<g id="edge39" class="edge">
+<title>9--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="1.5" d="M276.76,-515.79C299.9,-528.83 334.98,-548.59 357.62,-561.34"/>
+<text xml:space="preserve" text-anchor="middle" x="313.38" y="-541.07" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 17 -->
+<g id="node18" class="node">
+<title>17</title>
+<ellipse fill="#f1c40f" stroke="black" cx="275.65" cy="-841.15" rx="28.66" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="275.65" y="-838.15" font-family="Times,serif" font-size="10.00">Bolívia</text>
+</g>
+<!-- 9&#45;&#45;17 -->
+<g id="edge40" class="edge">
+<title>9--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M261.03,-520.14C273.35,-549.47 296.41,-610.55 300.3,-665.03 304.45,-723.08 289.12,-791.13 280.75,-822.98"/>
+<text xml:space="preserve" text-anchor="middle" x="296.6" y="-672.21" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 9&#45;&#45;18 -->
+<g id="edge41" class="edge">
+<title>9--18</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M229.59,-489.55C186.77,-466.03 97,-416.72 54.79,-393.54"/>
+<text xml:space="preserve" text-anchor="middle" x="137.96" y="-443.82" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 9&#45;&#45;19 -->
+<g id="edge42" class="edge">
+<title>9--19</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M225.4,-512.98C182.25,-529.1 99.94,-559.84 58.43,-575.35"/>
+<text xml:space="preserve" text-anchor="middle" x="137.3" y="-537.19" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 10&#45;&#45;11 -->
+<g id="edge43" class="edge">
+<title>10--11</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M522.44,-720.32C525.62,-701.05 530.59,-670.89 533.76,-651.7"/>
+<text xml:space="preserve" text-anchor="middle" x="524.1" y="-688.38" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 12 -->
+<g id="node13" class="node">
+<title>12</title>
+<ellipse fill="#f1c40f" stroke="black" cx="261.94" cy="-665.03" rx="33.34" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="261.94" y="-662.03" font-family="Times,serif" font-size="10.00">Colômbia</text>
+</g>
+<!-- 10&#45;&#45;12 -->
+<g id="edge44" class="edge">
+<title>10--12</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M493.32,-731.14C445.12,-717.37 342.45,-688.03 291.66,-673.52"/>
+<text xml:space="preserve" text-anchor="middle" x="389.46" y="-705.01" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 10&#45;&#45;13 -->
+<g id="edge45" class="edge">
+<title>10--13</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M499.62,-751.8C423,-802.85 146.54,-987.05 70.82,-1037.49"/>
+<text xml:space="preserve" text-anchor="middle" x="280.88" y="-897.27" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 10&#45;&#45;14 -->
+<g id="edge46" class="edge">
+<title>10--14</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M508.08,-721.92C495.78,-703.83 476.27,-675.12 463.95,-657"/>
+<text xml:space="preserve" text-anchor="middle" x="482.02" y="-691.87" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 10&#45;&#45;15 -->
+<g id="edge47" class="edge">
+<title>10--15</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M491.25,-741.5C466.89,-744 430.73,-747.68 399.2,-750.79 278.3,-762.73 134.77,-776.36 69.9,-782.5"/>
+<text xml:space="preserve" text-anchor="middle" x="276.49" y="-764.77" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 10&#45;&#45;16 -->
+<g id="edge48" class="edge">
+<title>10--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M501.33,-724.25C482.31,-708.61 452.15,-682.25 430.28,-655.61 413.43,-635.09 398,-608.5 388.73,-591.29"/>
+<text xml:space="preserve" text-anchor="middle" x="426.27" y="-658" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 10&#45;&#45;17 -->
+<g id="edge49" class="edge">
+<title>10--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="1.5" d="M495.61,-748.62C449.12,-768.18 346.77,-811.23 299.93,-830.94"/>
+<text xml:space="preserve" text-anchor="middle" x="393.9" y="-792.12" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 20 -->
+<g id="node21" class="node">
+<title>20</title>
+<ellipse fill="#f1c40f" stroke="black" cx="487.67" cy="-540.34" rx="35.84" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="487.67" y="-537.34" font-family="Times,serif" font-size="10.00">Costa Rica</text>
+</g>
+<!-- 10&#45;&#45;20 -->
+<g id="edge50" class="edge">
+<title>10--20</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M516.33,-720.41C512.8,-699.48 506.87,-664.09 502,-633.62 497.84,-607.57 493.24,-577.4 490.41,-558.58"/>
+<text xml:space="preserve" text-anchor="middle" x="497.99" y="-635.99" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 21 -->
+<g id="node22" class="node">
+<title>21</title>
+<ellipse fill="#f1c40f" stroke="black" cx="395.14" cy="-450.44" rx="28.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="395.14" y="-447.44" font-family="Times,serif" font-size="10.00">Panamá</text>
+</g>
+<!-- 10&#45;&#45;21 -->
+<g id="edge51" class="edge">
+<title>10--21</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M513.52,-720.64C506.87,-700.77 495.48,-667.91 484.05,-640.23 457.38,-575.66 420.71,-501.19 404.03,-467.99"/>
+<text xml:space="preserve" text-anchor="middle" x="459.34" y="-594.7" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 22 -->
+<g id="node23" class="node">
+<title>22</title>
+<ellipse fill="#f1c40f" stroke="black" cx="399.2" cy="-729.03" rx="33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="399.2" y="-726.03" font-family="Times,serif" font-size="10.00">Honduras</text>
+</g>
+<!-- 10&#45;&#45;22 -->
+<g id="edge52" class="edge">
+<title>10--22</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M490.93,-736.34C473.3,-734.93 450.58,-733.12 432.17,-731.66"/>
+<text xml:space="preserve" text-anchor="middle" x="457.84" y="-736.42" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 23 -->
+<g id="node24" class="node">
+<title>23</title>
+<ellipse fill="#f1c40f" stroke="black" cx="593.93" cy="-571.59" rx="37.84" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="593.93" y="-568.59" font-family="Times,serif" font-size="10.00">El Salvador</text>
+</g>
+<!-- 10&#45;&#45;23 -->
+<g id="edge53" class="edge">
+<title>10--23</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M528.69,-721.42C539.61,-700.86 557.97,-665.24 571.47,-633.62 577.69,-619.09 583.73,-602.2 587.97,-589.72"/>
+<text xml:space="preserve" text-anchor="middle" x="556.98" y="-659.43" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 24 -->
+<g id="node25" class="node">
+<title>24</title>
+<ellipse fill="#f1c40f" stroke="black" cx="568.54" cy="-499.85" rx="34.66" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="568.54" y="-496.85" font-family="Times,serif" font-size="10.00">Nicarágua</text>
+</g>
+<!-- 10&#45;&#45;24 -->
+<g id="edge54" class="edge">
+<title>10--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M513.03,-720.8C506.35,-699.94 497.41,-664.32 502,-633.62 508.83,-587.96 538.33,-541.12 555.67,-516.82"/>
+<text xml:space="preserve" text-anchor="middle" x="503.2" y="-613.03" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 25 -->
+<g id="node26" class="node">
+<title>25</title>
+<ellipse fill="#f1c40f" stroke="black" cx="622.71" cy="-749.41" rx="35.67" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="622.71" y="-746.41" font-family="Times,serif" font-size="10.00">Guatemala</text>
+</g>
+<!-- 10&#45;&#45;25 -->
+<g id="edge55" class="edge">
+<title>10--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M547.65,-741.56C559.95,-742.84 574.5,-744.37 587.51,-745.73"/>
+<text xml:space="preserve" text-anchor="middle" x="563.31" y="-746.02" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 26 -->
+<g id="node27" class="node">
+<title>26</title>
+<ellipse fill="#f1c40f" stroke="black" cx="442.93" cy="-868.43" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="442.93" y="-865.43" font-family="Times,serif" font-size="10.00">Cuba</text>
+</g>
+<!-- 10&#45;&#45;26 -->
+<g id="edge56" class="edge">
+<title>10--26</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M509.27,-755.84C494.55,-780.81 467.49,-826.76 452.89,-851.53"/>
+<text xml:space="preserve" text-anchor="middle" x="477.03" y="-806.16" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 27 -->
+<g id="node28" class="node">
+<title>27</title>
+<ellipse fill="#f1c40f" stroke="black" cx="573.06" cy="-870.87" rx="51.7" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="573.06" y="-867.87" font-family="Times,serif" font-size="10.00">Rep. Dominicana</text>
+</g>
+<!-- 10&#45;&#45;27 -->
+<g id="edge57" class="edge">
+<title>10--27</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M526.66,-756.44C536.89,-781.68 555.5,-827.57 565.77,-852.89"/>
+<text xml:space="preserve" text-anchor="middle" x="542.2" y="-807.04" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 28 -->
+<g id="node29" class="node">
+<title>28</title>
+<ellipse fill="#f1c40f" stroke="black" cx="317.21" cy="-1072.21" rx="35.51" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="317.21" y="-1069.21" font-family="Times,serif" font-size="10.00">Porto Rico</text>
+</g>
+<!-- 10&#45;&#45;28 -->
+<g id="edge58" class="edge">
+<title>10--28</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M504.45,-754.18C484.26,-775.56 447.73,-815.62 420.66,-853.05 371.72,-920.73 336.48,-1015.22 323.12,-1054.25"/>
+<text xml:space="preserve" text-anchor="middle" x="390.89" y="-895.37" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 29 -->
+<g id="node30" class="node">
+<title>29</title>
+<ellipse fill="#3498db" stroke="black" cx="684.05" cy="-590.67" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="684.05" y="-587.67" font-family="Times,serif" font-size="10.00">EUA</text>
+</g>
+<!-- 10&#45;&#45;29 -->
+<g id="edge59" class="edge">
+<title>10--29</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M542.82,-728.2C567.81,-716.25 607.52,-694.75 635.06,-667.66 652.9,-650.11 667.38,-624.9 675.85,-608.16"/>
+<text xml:space="preserve" text-anchor="middle" x="631.06" y="-670.06" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 11&#45;&#45;12 -->
+<g id="edge60" class="edge">
+<title>11--12</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M510.95,-643.19C499.88,-647.19 486.77,-651.79 474.82,-655.61 465.02,-658.76 462.74,-660.48 452.55,-661.99 398.04,-670.07 333.81,-668.93 295.56,-667.14"/>
+<text xml:space="preserve" text-anchor="middle" x="400.04" y="-669.27" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;13 -->
+<g id="edge61" class="edge">
+<title>11--13</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M521.64,-649.34C500.61,-671.1 461.12,-711.45 426.07,-744.42 371.26,-795.98 357.05,-808.41 299.2,-856.53 215.25,-926.37 111.31,-1005.38 69.85,-1036.61"/>
+<text xml:space="preserve" text-anchor="middle" x="295.17" y="-858.96" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;14 -->
+<g id="edge62" class="edge">
+<title>11--14</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M506.82,-635.97C498.03,-636.66 488.46,-637.41 479.85,-638.09"/>
+<text xml:space="preserve" text-anchor="middle" x="489.27" y="-629.83" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;15 -->
+<g id="edge63" class="edge">
+<title>11--15</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M510.94,-643.14C499.86,-647.13 486.76,-651.73 474.82,-655.61 322.61,-705.13 138.28,-757.14 66.1,-777.2"/>
+<text xml:space="preserve" text-anchor="middle" x="285.44" y="-715.4" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;16 -->
+<g id="edge64" class="edge">
+<title>11--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M511.16,-623.88C481.96,-612.75 434.47,-594.66 405.28,-583.53"/>
+<text xml:space="preserve" text-anchor="middle" x="454.22" y="-606.1" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;17 -->
+<g id="edge65" class="edge">
+<title>11--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M522.67,-649.75C502.53,-672.34 463.74,-714.04 426.07,-744.42 383.29,-778.92 327.76,-811.95 297.56,-829.05"/>
+<text xml:space="preserve" text-anchor="middle" x="414.42" y="-752.86" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;20 -->
+<g id="edge66" class="edge">
+<title>11--20</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M527.51,-616.08C518.79,-599.51 505.78,-574.78 497.03,-558.13"/>
+<text xml:space="preserve" text-anchor="middle" x="508.28" y="-589.53" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;21 -->
+<g id="edge67" class="edge">
+<title>11--21</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M518.88,-618.65C499.16,-601.38 467.46,-571.37 446.6,-540.34 430.25,-516.01 413.86,-486.22 404.11,-467.78"/>
+<text xml:space="preserve" text-anchor="middle" x="442.59" y="-542.72" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;22 -->
+<g id="edge68" class="edge">
+<title>11--22</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M516.74,-647.5C490.81,-665.48 445.83,-696.69 419.67,-714.83"/>
+<text xml:space="preserve" text-anchor="middle" x="464.29" y="-683.5" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;23 -->
+<g id="edge69" class="edge">
+<title>11--23</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M551.47,-617.65C559.81,-608.6 570.22,-597.3 578.65,-588.16"/>
+<text xml:space="preserve" text-anchor="middle" x="561.03" y="-605.34" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;24 -->
+<g id="edge70" class="edge">
+<title>11--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M540.72,-615.41C543.46,-603.04 547.21,-586.31 550.69,-571.59 555.01,-553.36 560.21,-532.59 563.88,-518.1"/>
+<text xml:space="preserve" text-anchor="middle" x="547.83" y="-569.24" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;25 -->
+<g id="edge71" class="edge">
+<title>11--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M549.06,-650.21C565.31,-672.1 593.76,-710.42 610.13,-732.48"/>
+<text xml:space="preserve" text-anchor="middle" x="575.55" y="-693.68" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;26 -->
+<g id="edge72" class="edge">
+<title>11--26</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M527.53,-651.16C516.89,-671.76 499.24,-707.14 486.49,-738.6 470.59,-777.82 455.74,-825.27 448.17,-850.54"/>
+<text xml:space="preserve" text-anchor="middle" x="478.42" y="-751.28" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;27 -->
+<g id="edge73" class="edge">
+<title>11--27</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M539.53,-651.85C546.29,-696.01 563.49,-808.36 570.26,-852.58"/>
+<text xml:space="preserve" text-anchor="middle" x="550.89" y="-754.59" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;28 -->
+<g id="edge74" class="edge">
+<title>11--28</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M526.96,-651.12C505.39,-689.89 452.39,-786.11 411.44,-868.43 377.67,-936.31 340.82,-1018.67 325.07,-1054.33"/>
+<text xml:space="preserve" text-anchor="middle" x="407.43" y="-870.84" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 11&#45;&#45;40 -->
+<g id="edge75" class="edge">
+<title>11--40</title>
+<path fill="none" stroke="black" stroke-width="0.4" stroke-dasharray="1,5" d="M566.57,-630.53C596.48,-627.16 643.75,-621.05 684.05,-612.43 714.28,-605.96 913.08,-542.95 983.55,-520.52"/>
+<text xml:space="preserve" text-anchor="middle" x="774.26" y="-587.36" font-family="Times,serif" font-size="8.00">25</text>
+</g>
+<!-- 55 -->
+<g id="node56" class="node">
+<title>55</title>
+<ellipse fill="#95a5a6" stroke="black" cx="692.53" cy="-864.74" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="692.53" y="-861.74" font-family="Times,serif" font-size="10.00">Itália</text>
+</g>
+<!-- 11&#45;&#45;55 -->
+<g id="edge76" class="edge">
+<title>11--55</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="1,5" d="M541.95,-651.61C549.13,-675.01 563.3,-716.77 581.83,-749.41 606.22,-792.37 650.21,-831.35 674.75,-851.11"/>
+<text xml:space="preserve" text-anchor="middle" x="586.49" y="-765.75" font-family="Times,serif" font-size="8.00">20</text>
+</g>
+<!-- 12&#45;&#45;13 -->
+<g id="edge77" class="edge">
+<title>12--13</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M252.35,-682.59C217.22,-746.92 95.76,-969.35 60.93,-1033.13"/>
+<text xml:space="preserve" text-anchor="middle" x="152.53" y="-860.47" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 12&#45;&#45;14 -->
+<g id="edge78" class="edge">
+<title>12--14</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M294.71,-660.77C331.75,-655.95 391.36,-648.19 425.74,-643.72"/>
+<text xml:space="preserve" text-anchor="middle" x="357.22" y="-654.51" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 12&#45;&#45;15 -->
+<g id="edge79" class="edge">
+<title>12--15</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M238.08,-677.72C194.72,-700.8 103.44,-749.37 59.56,-772.72"/>
+<text xml:space="preserve" text-anchor="middle" x="145.01" y="-727.52" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 12&#45;&#45;16 -->
+<g id="edge80" class="edge">
+<title>12--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M281.39,-649.96C303.47,-632.85 339.25,-605.14 361.01,-588.27"/>
+<text xml:space="preserve" text-anchor="middle" x="317.32" y="-621.43" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 12&#45;&#45;17 -->
+<g id="edge81" class="edge">
+<title>12--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M263.36,-683.21C265.98,-716.96 271.59,-788.93 274.22,-822.8"/>
+<text xml:space="preserve" text-anchor="middle" x="264.79" y="-755.36" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 12&#45;&#45;20 -->
+<g id="edge82" class="edge">
+<title>12--20</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M286.28,-652.44C314.75,-637.62 363.21,-612.12 404.27,-589.17 424.78,-577.71 447.8,-564.18 464.45,-554.27"/>
+<text xml:space="preserve" text-anchor="middle" x="372.05" y="-607.14" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 12&#45;&#45;21 -->
+<g id="edge83" class="edge">
+<title>12--21</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M272.62,-647.83C297.62,-607.55 359.73,-507.48 384.6,-467.42"/>
+<text xml:space="preserve" text-anchor="middle" x="324.66" y="-559.94" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 13&#45;&#45;14 -->
+<g id="edge84" class="edge">
+<title>13--14</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M64.91,-1034.38C96.47,-996.96 178.43,-901.05 252.11,-825.76 303.21,-773.55 318.67,-763.23 372.33,-713.65 394.38,-693.28 419.99,-669.89 436.23,-655.09"/>
+<text xml:space="preserve" text-anchor="middle" x="248.12" y="-828.15" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 13&#45;&#45;17 -->
+<g id="edge85" class="edge">
+<title>13--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M67.29,-1035.64C108.24,-997.41 217.71,-895.23 259.31,-856.4"/>
+<text xml:space="preserve" text-anchor="middle" x="159.06" y="-948.65" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 14&#45;&#45;15 -->
+<g id="edge86" class="edge">
+<title>14--15</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M428.3,-648.69C356.06,-673.87 142.53,-748.3 64.22,-775.6"/>
+<text xml:space="preserve" text-anchor="middle" x="244.54" y="-713.75" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 14&#45;&#45;16 -->
+<g id="edge87" class="edge">
+<title>14--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M436.39,-625.48C424.57,-614.7 408.57,-600.12 396.59,-589.19"/>
+<text xml:space="preserve" text-anchor="middle" x="412.55" y="-609.79" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 14&#45;&#45;17 -->
+<g id="edge88" class="edge">
+<title>14--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M435.44,-654.31C418.6,-668.52 392.56,-691.47 372.33,-713.65 338.46,-750.81 304.16,-799.16 286.96,-824.3"/>
+<text xml:space="preserve" text-anchor="middle" x="350.53" y="-736.5" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 15&#45;&#45;16 -->
+<g id="edge89" class="edge">
+<title>15--16</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M55.19,-770.87C90.69,-744.92 166.95,-690.34 234.82,-649.64 276.33,-624.75 326.82,-599.37 355.91,-585.19"/>
+<text xml:space="preserve" text-anchor="middle" x="196.95" y="-673.01" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 15&#45;&#45;17 -->
+<g id="edge90" class="edge">
+<title>15--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M67.45,-793.26C115.31,-804.26 203.93,-824.65 248.53,-834.91"/>
+<text xml:space="preserve" text-anchor="middle" x="155.21" y="-816.76" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 16&#45;&#45;17 -->
+<g id="edge91" class="edge">
+<title>16--17</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M372.72,-591.75C353.76,-640.45 301.53,-774.65 282.61,-823.27"/>
+<text xml:space="preserve" text-anchor="middle" x="323.65" y="-709.94" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 18&#45;&#45;9 -->
+<g id="edge93" class="edge">
+<title>18--9</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M54.79,-393.54C96.98,-416.72 186.71,-466 229.55,-489.53"/>
+<text xml:space="preserve" text-anchor="middle" x="137.93" y="-443.8" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 18&#45;&#45;19 -->
+<g id="edge92" class="edge">
+<title>18--19</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M32.05,-399.44C32.28,-438.24 32.81,-527.9 33.05,-566.54"/>
+<text xml:space="preserve" text-anchor="middle" x="28.55" y="-485.45" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 19&#45;&#45;9 -->
+<g id="edge94" class="edge">
+<title>19--9</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M58.41,-575.36C99.85,-559.88 182.01,-529.19 225.21,-513.05"/>
+<text xml:space="preserve" text-anchor="middle" x="137.15" y="-546.85" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 20&#45;&#45;21 -->
+<g id="edge95" class="edge">
+<title>20--21</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M471.13,-524.27C454.08,-507.7 427.69,-482.06 410.92,-465.77"/>
+<text xml:space="preserve" text-anchor="middle" x="436.92" y="-497.32" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 20&#45;&#45;22 -->
+<g id="edge96" class="edge">
+<title>20--22</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M473.37,-557.18C458.04,-576.13 434.15,-608.43 421.05,-640.23 411.38,-663.72 405.26,-692.54 402.03,-710.84"/>
+<text xml:space="preserve" text-anchor="middle" x="417.05" y="-642.65" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 20&#45;&#45;23 -->
+<g id="edge97" class="edge">
+<title>20--23</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M518.98,-549.55C532.32,-553.47 547.89,-558.05 561.37,-562.02"/>
+<text xml:space="preserve" text-anchor="middle" x="536.12" y="-558.17" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 20&#45;&#45;24 -->
+<g id="edge98" class="edge">
+<title>20--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M513.26,-527.53C522.79,-522.76 533.6,-517.34 543.12,-512.58"/>
+<text xml:space="preserve" text-anchor="middle" x="524.19" y="-522.45" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 20&#45;&#45;25 -->
+<g id="edge99" class="edge">
+<title>20--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M504.64,-556.6C520.16,-571.85 543.37,-595.64 561.3,-618.24 566.4,-624.66 567.59,-626.41 571.47,-633.62 575.75,-641.56 575.85,-644.01 579.46,-652.28 591.57,-680.03 605.91,-712.08 614.66,-731.54"/>
+<text xml:space="preserve" text-anchor="middle" x="569.49" y="-639.98" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 21&#45;&#45;22 -->
+<g id="edge100" class="edge">
+<title>21--22</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M399.48,-468.69C404.84,-492.65 413.37,-536.09 414.45,-573.79 415.88,-623.6 407.38,-682.01 402.48,-710.92"/>
+<text xml:space="preserve" text-anchor="middle" x="410.58" y="-592.19" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 21&#45;&#45;23 -->
+<g id="edge101" class="edge">
+<title>21--23</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M416.04,-463.17C453.32,-485.9 531.06,-533.27 570.25,-557.16"/>
+<text xml:space="preserve" text-anchor="middle" x="488.43" y="-512.13" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 21&#45;&#45;24 -->
+<g id="edge102" class="edge">
+<title>21--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M421.85,-458.05C453.11,-466.96 504.76,-481.68 537.69,-491.06"/>
+<text xml:space="preserve" text-anchor="middle" x="475.14" y="-476.78" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 22&#45;&#45;23 -->
+<g id="edge103" class="edge">
+<title>22--23</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M415.79,-713.06C431.16,-698.24 454.62,-675.52 474.82,-655.61 491.55,-639.13 493.51,-632.49 512.17,-618.24 529.32,-605.15 550.52,-593.16 567.04,-584.61"/>
+<text xml:space="preserve" text-anchor="middle" x="481.87" y="-646.34" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 22&#45;&#45;24 -->
+<g id="edge104" class="edge">
+<title>22--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M417.62,-713.59C433.81,-699.48 457.42,-677.54 474.82,-655.61 511.51,-609.39 544.6,-547.58 559.78,-517.62"/>
+<text xml:space="preserve" text-anchor="middle" x="494.84" y="-625.05" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 22&#45;&#45;25 -->
+<g id="edge105" class="edge">
+<title>22--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M426.89,-739.29C450.95,-747.47 486.94,-757.93 519.42,-760.36 542.8,-762.11 569.07,-759.26 589.26,-756.03"/>
+<text xml:space="preserve" text-anchor="middle" x="515.44" y="-762.76" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 23&#45;&#45;24 -->
+<g id="edge106" class="edge">
+<title>23--24</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M587.52,-553.49C583.64,-542.53 578.72,-528.61 574.85,-517.7"/>
+<text xml:space="preserve" text-anchor="middle" x="577.18" y="-537.98" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 23&#45;&#45;25 -->
+<g id="edge107" class="edge">
+<title>23--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M587.51,-589.77C582.52,-606.06 576.83,-630.66 579.46,-652.28 583.08,-682.15 599.62,-713.36 611.17,-732.1"/>
+<text xml:space="preserve" text-anchor="middle" x="577.7" y="-667.32" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 24&#45;&#45;25 -->
+<g id="edge108" class="edge">
+<title>24--25</title>
+<path fill="none" stroke="#f39c12" stroke-width="2.5" d="M560.97,-517.84C555.7,-532.17 549.77,-552.88 550.69,-571.59 551.63,-590.6 572.38,-634.61 579.46,-652.28 590.7,-680.39 605.29,-712.34 614.32,-731.68"/>
+<text xml:space="preserve" text-anchor="middle" x="566.85" y="-634.33" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 26&#45;&#45;27 -->
+<g id="edge109" class="edge">
+<title>26--27</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M470.21,-868.94C484.97,-869.22 503.69,-869.57 521.11,-869.9"/>
+<text xml:space="preserve" text-anchor="middle" x="490.66" y="-871.8" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 26&#45;&#45;28 -->
+<g id="edge110" class="edge">
+<title>26--28</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M432.43,-885.46C408.82,-923.72 351.78,-1016.18 327.95,-1054.8"/>
+<text xml:space="preserve" text-anchor="middle" x="376.27" y="-972.4" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 27&#45;&#45;28 -->
+<g id="edge111" class="edge">
+<title>27--28</title>
+<path fill="none" stroke="#f39c12" stroke-width="2" d="M551.69,-887.69C502.81,-926.15 383.47,-1020.07 336.58,-1056.97"/>
+<text xml:space="preserve" text-anchor="middle" x="439.39" y="-975.31" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 29&#45;&#45;10 -->
+<g id="edge122" class="edge">
+<title>29--10</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M675.85,-608.16C667.38,-624.9 652.9,-650.11 635.06,-667.66 607.52,-694.75 567.81,-716.25 542.82,-728.2"/>
+<text xml:space="preserve" text-anchor="middle" x="615.92" y="-683.52" font-family="Times,serif" font-size="8.00">50</text>
+</g>
+<!-- 30 -->
+<g id="node31" class="node">
+<title>30</title>
+<ellipse fill="#3498db" stroke="black" cx="687.73" cy="-421.05" rx="40.52" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="687.73" y="-418.05" font-family="Times,serif" font-size="10.00">Reino Unido</text>
+</g>
+<!-- 29&#45;&#45;30 -->
+<g id="edge112" class="edge">
+<title>29--30</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M686.86,-572.28C689.17,-555.8 692.15,-530.95 692.69,-509.19 693.29,-484.98 691.26,-457.08 689.62,-439.27"/>
+<text xml:space="preserve" text-anchor="middle" x="688.75" y="-508.16" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 31 -->
+<g id="node32" class="node">
+<title>31</title>
+<ellipse fill="#3498db" stroke="black" cx="612.03" cy="-652.28" rx="27.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="612.03" y="-649.28" font-family="Times,serif" font-size="10.00">Canadá</text>
+</g>
+<!-- 29&#45;&#45;31 -->
+<g id="edge113" class="edge">
+<title>29--31</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M667.34,-604.96C655.87,-614.77 640.7,-627.76 629.14,-637.64"/>
+<text xml:space="preserve" text-anchor="middle" x="644.27" y="-623.67" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 32 -->
+<g id="node33" class="node">
+<title>32</title>
+<ellipse fill="#3498db" stroke="black" cx="761.16" cy="-529.08" rx="32" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="761.16" y="-526.08" font-family="Times,serif" font-size="10.00">Austrália</text>
+</g>
+<!-- 29&#45;&#45;32 -->
+<g id="edge114" class="edge">
+<title>29--32</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M701.54,-576.7C713.72,-566.97 729.94,-554.02 742.38,-544.08"/>
+<text xml:space="preserve" text-anchor="middle" x="717.86" y="-553.27" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 33 -->
+<g id="node34" class="node">
+<title>33</title>
+<ellipse fill="#3498db" stroke="black" cx="768.97" cy="-632.42" rx="45.52" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="768.97" y="-629.42" font-family="Times,serif" font-size="10.00">Nova Zelândia</text>
+</g>
+<!-- 29&#45;&#45;33 -->
+<g id="edge115" class="edge">
+<title>29--33</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M705.92,-601.42C716.34,-606.55 728.94,-612.74 740.13,-618.24"/>
+<text xml:space="preserve" text-anchor="middle" x="718.73" y="-612.09" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 34 -->
+<g id="node35" class="node">
+<title>34</title>
+<ellipse fill="#3498db" stroke="black" cx="661.19" cy="-509.19" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="661.19" y="-506.19" font-family="Times,serif" font-size="10.00">Irlanda</text>
+</g>
+<!-- 29&#45;&#45;34 -->
+<g id="edge116" class="edge">
+<title>29--34</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M678.97,-572.59C675.19,-559.09 670.03,-540.71 666.25,-527.22"/>
+<text xml:space="preserve" text-anchor="middle" x="668.61" y="-552.3" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 29&#45;&#45;35 -->
+<g id="edge117" class="edge">
+<title>29--35</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M672.27,-574.01C663,-560.75 649.86,-541.66 638.92,-524.57 634.62,-517.86 632.97,-516.46 629.69,-509.19 617.91,-483.07 608.75,-451.05 603.68,-431.41"/>
+<text xml:space="preserve" text-anchor="middle" x="624.73" y="-509.44" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 36 -->
+<g id="node37" class="node">
+<title>36</title>
+<ellipse fill="#3498db" stroke="black" cx="741.31" cy="-292.5" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="741.31" y="-289.5" font-family="Times,serif" font-size="10.00">Índia</text>
+</g>
+<!-- 29&#45;&#45;36 -->
+<g id="edge118" class="edge">
+<title>29--36</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.2" d="M690.64,-573.16C701.76,-542.73 724,-477.9 733.86,-421.05 740.59,-382.29 741.59,-336.06 741.55,-310.96"/>
+<text xml:space="preserve" text-anchor="middle" x="729.86" y="-423.45" font-family="Times,serif" font-size="8.00">60</text>
+</g>
+<!-- 37 -->
+<g id="node38" class="node">
+<title>37</title>
+<ellipse fill="#3498db" stroke="black" cx="858.12" cy="-304.9" rx="27.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="858.12" y="-301.9" font-family="Times,serif" font-size="10.00">Nigéria</text>
+</g>
+<!-- 29&#45;&#45;37 -->
+<g id="edge119" class="edge">
+<title>29--37</title>
+<path fill="none" stroke="#2980b9" d="M694.81,-573.84C702.82,-561.4 714.08,-544.09 724.24,-529.08 728.93,-522.16 729.9,-520.28 735.06,-513.7 766.3,-473.85 784.69,-470.98 807.54,-425.8 825.51,-390.27 842.55,-346.82 851.53,-322.88"/>
+<text xml:space="preserve" text-anchor="middle" x="782.13" y="-461.5" font-family="Times,serif" font-size="8.00">55</text>
+</g>
+<!-- 38 -->
+<g id="node39" class="node">
+<title>38</title>
+<ellipse fill="#3498db" stroke="black" cx="693.85" cy="-78.96" rx="30.67" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="693.85" y="-75.96" font-family="Times,serif" font-size="10.00">Filipinas</text>
+</g>
+<!-- 29&#45;&#45;38 -->
+<g id="edge120" class="edge">
+<title>29--38</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M692.11,-573.32C705.45,-543.14 730.96,-478.68 733.86,-421.05 736.79,-363 717.34,-350.14 709.81,-292.5 700.43,-220.62 696.08,-134.34 694.53,-97.31"/>
+<text xml:space="preserve" text-anchor="middle" x="713.22" y="-331.38" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 39 -->
+<g id="node40" class="node">
+<title>39</title>
+<ellipse fill="#3498db" stroke="black" cx="874.28" cy="-460.95" rx="34" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="874.28" y="-457.95" font-family="Times,serif" font-size="10.00">Singapura</text>
+</g>
+<!-- 29&#45;&#45;39 -->
+<g id="edge121" class="edge">
+<title>29--39</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M708.63,-582.4C730.35,-574.48 762.35,-561.25 787.26,-544.47 816.09,-525.04 844.12,-495.69 860.27,-477.45"/>
+<text xml:space="preserve" text-anchor="middle" x="788.31" y="-543.35" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 30&#45;&#45;31 -->
+<g id="edge123" class="edge">
+<title>30--31</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M691.7,-439.2C694.96,-457.21 698.21,-485.46 692.69,-509.19 686.45,-535.99 643.77,-603.71 623.14,-635.42"/>
+<text xml:space="preserve" text-anchor="middle" x="672.28" y="-539.94" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 30&#45;&#45;32 -->
+<g id="edge124" class="edge">
+<title>30--32</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M699.53,-438.41C713.31,-458.69 735.96,-492.02 749.63,-512.13"/>
+<text xml:space="preserve" text-anchor="middle" x="720.62" y="-477.73" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 30&#45;&#45;33 -->
+<g id="edge125" class="edge">
+<title>30--33</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M693.35,-439.18C700.17,-460.78 712.23,-497.86 724.24,-529.08 735.9,-559.37 751.24,-593.83 760.6,-614.32"/>
+<text xml:space="preserve" text-anchor="middle" x="720.28" y="-531.57" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 30&#45;&#45;34 -->
+<g id="edge126" class="edge">
+<title>30--34</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M682.23,-439.32C677.65,-454.54 671.15,-476.12 666.59,-491.25"/>
+<text xml:space="preserve" text-anchor="middle" x="670.4" y="-467.72" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 30&#45;&#45;35 -->
+<g id="edge127" class="edge">
+<title>30--35</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M647.64,-417.53C644.99,-417.29 642.32,-417.06 639.67,-416.82"/>
+<text xml:space="preserve" text-anchor="middle" x="639.66" y="-419.57" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 30&#45;&#45;36 -->
+<g id="edge128" class="edge">
+<title>30--36</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M695.29,-402.91C705.56,-378.27 723.8,-334.52 733.96,-310.14"/>
+<text xml:space="preserve" text-anchor="middle" x="710.67" y="-349.23" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 30&#45;&#45;37 -->
+<g id="edge129" class="edge">
+<title>30--37</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M710.36,-405.63C744.03,-382.67 806.77,-339.9 838.57,-318.23"/>
+<text xml:space="preserve" text-anchor="middle" x="771.17" y="-363.85" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 30&#45;&#45;38 -->
+<g id="edge130" class="edge">
+<title>30--38</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M688.06,-402.66C689.12,-343.26 692.45,-156.97 693.51,-97.44"/>
+<text xml:space="preserve" text-anchor="middle" x="686.79" y="-252.5" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 30&#45;&#45;39 -->
+<g id="edge131" class="edge">
+<title>30--39</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M721.29,-431.4C731.69,-434.58 743.19,-438.06 753.77,-441.18 763.64,-444.1 765.96,-445.44 776.04,-447.55 797.27,-452.01 821.4,-455.33 840.43,-457.54"/>
+<text xml:space="preserve" text-anchor="middle" x="776.05" y="-450.78" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 30&#45;&#45;40 -->
+<g id="edge132" class="edge">
+<title>30--40</title>
+<path fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="5,2" d="M718.77,-432.97C750.57,-444.91 801.6,-463.34 846.65,-476.33 858.76,-479.82 861.99,-479.91 874.28,-482.7 911.82,-491.22 955.32,-500.91 982.31,-506.9"/>
+<text xml:space="preserve" text-anchor="middle" x="844.3" y="-479.2" font-family="Times,serif" font-size="8.00">30</text>
+</g>
+<!-- 54 -->
+<g id="node55" class="node">
+<title>54</title>
+<ellipse fill="#95a5a6" stroke="black" cx="823.75" cy="-864.06" rx="34.33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="823.75" y="-861.06" font-family="Times,serif" font-size="10.00">Alemanha</text>
+</g>
+<!-- 30&#45;&#45;54 -->
+<g id="edge133" class="edge">
+<title>30--54</title>
+<path fill="none" stroke="black" stroke-width="0.4" stroke-dasharray="5,2" d="M691.44,-439.28C697.59,-470.25 709.76,-535.17 715.54,-590.67 717.47,-609.15 712.34,-614.56 717.43,-632.42 733.21,-687.88 756.71,-693.25 780.7,-745.67 796.53,-780.28 810.73,-822.53 818.2,-846.05"/>
+<text xml:space="preserve" text-anchor="middle" x="721.58" y="-658.01" font-family="Times,serif" font-size="8.00">25</text>
+</g>
+<!-- 31&#45;&#45;32 -->
+<g id="edge134" class="edge">
+<title>31--32</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M637.23,-643.86C657.45,-636.24 685.75,-623.52 706.32,-606.06 726.21,-589.17 742.55,-563.57 752.07,-546.59"/>
+<text xml:space="preserve" text-anchor="middle" x="702.38" y="-608.41" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 31&#45;&#45;33 -->
+<g id="edge135" class="edge">
+<title>31--33</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M639.72,-648.78C663.4,-645.78 697.87,-641.42 725.26,-637.95"/>
+<text xml:space="preserve" text-anchor="middle" x="677.1" y="-645.94" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 31&#45;&#45;34 -->
+<g id="edge136" class="edge">
+<title>31--34</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M618.15,-634.45C627.63,-606.88 645.71,-554.23 655.14,-526.8"/>
+<text xml:space="preserve" text-anchor="middle" x="632.66" y="-582.97" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 31&#45;&#45;40 -->
+<g id="edge137" class="edge">
+<title>31--40</title>
+<path fill="none" stroke="black" stroke-width="1.2" stroke-dasharray="5,2" d="M636.19,-642.83C676.82,-627.03 761.48,-594.5 833.9,-569.21 886.78,-550.74 949.36,-530.93 983.31,-520.35"/>
+<text xml:space="preserve" text-anchor="middle" x="829.9" y="-571.61" font-family="Times,serif" font-size="8.00">60</text>
+</g>
+<!-- 41 -->
+<g id="node42" class="node">
+<title>41</title>
+<ellipse fill="#9b59b6" stroke="black" cx="747.77" cy="-745.67" rx="28.33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="747.77" y="-742.67" font-family="Times,serif" font-size="10.00">Bélgica</text>
+</g>
+<!-- 31&#45;&#45;41 -->
+<g id="edge138" class="edge">
+<title>31--41</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M628.44,-667.33C638.16,-675.93 650.9,-686.68 662.96,-695.27 683.47,-709.87 708.39,-724.32 725.89,-733.98"/>
+<text xml:space="preserve" text-anchor="middle" x="671.4" y="-706.17" font-family="Times,serif" font-size="8.00">50</text>
+</g>
+<!-- 32&#45;&#45;33 -->
+<g id="edge139" class="edge">
+<title>32--33</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M762.55,-547.56C763.98,-566.37 766.17,-595.36 767.59,-614.11"/>
+<text xml:space="preserve" text-anchor="middle" x="761.07" y="-583.26" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 32&#45;&#45;38 -->
+<g id="edge140" class="edge">
+<title>32--38</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M756.28,-510.84C745.94,-471.34 721.77,-374.86 709.81,-292.5 699.4,-220.76 695.58,-134.41 694.36,-97.34"/>
+<text xml:space="preserve" text-anchor="middle" x="705.81" y="-294.89" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 32&#45;&#45;39 -->
+<g id="edge141" class="edge">
+<title>32--39</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M783.24,-515.78C802.91,-503.93 831.59,-486.66 851.48,-474.68"/>
+<text xml:space="preserve" text-anchor="middle" x="813.28" y="-497.68" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 33&#45;&#45;34 -->
+<g id="edge142" class="edge">
+<title>33--34</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M753.76,-615.03C732.75,-591.01 695.18,-548.05 674.96,-524.94"/>
+<text xml:space="preserve" text-anchor="middle" x="710.06" y="-572.04" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 34&#45;&#45;30 -->
+<g id="edge143" class="edge">
+<title>34--30</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M666.56,-491.36C671.13,-476.16 677.68,-454.44 682.28,-439.17"/>
+<text xml:space="preserve" text-anchor="middle" x="670.41" y="-458.09" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 35&#45;&#45;30 -->
+<g id="edge146" class="edge">
+<title>35--30</title>
+<path fill="none" stroke="#2980b9" stroke-width="2.5" d="M639.62,-416.82C642.26,-417.05 644.92,-417.29 647.57,-417.52"/>
+<text xml:space="preserve" text-anchor="middle" x="639.59" y="-419.57" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 35&#45;&#45;36 -->
+<g id="edge144" class="edge">
+<title>35--36</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M618.43,-396.98C646.45,-373.16 698.14,-329.2 724.66,-306.66"/>
+<text xml:space="preserve" text-anchor="middle" x="668.11" y="-353.74" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 35&#45;&#45;37 -->
+<g id="edge145" class="edge">
+<title>35--37</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M629.22,-400.73C681.26,-378.95 787.31,-334.55 834.53,-314.78"/>
+<text xml:space="preserve" text-anchor="middle" x="729.68" y="-349.8" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 36&#45;&#45;30 -->
+<g id="edge150" class="edge">
+<title>36--30</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M733.97,-310.11C723.77,-334.59 705.4,-378.66 695.15,-403.25"/>
+<text xml:space="preserve" text-anchor="middle" x="710.58" y="-359.04" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 36&#45;&#45;37 -->
+<g id="edge147" class="edge">
+<title>36--37</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M768.4,-295.38C787,-297.35 811.62,-299.96 830.36,-301.95"/>
+<text xml:space="preserve" text-anchor="middle" x="795.33" y="-301.06" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 36&#45;&#45;38 -->
+<g id="edge148" class="edge">
+<title>36--38</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.3" d="M737.26,-274.3C728.3,-233.95 706.84,-137.42 697.88,-97.12"/>
+<text xml:space="preserve" text-anchor="middle" x="713.57" y="-188.09" font-family="Times,serif" font-size="8.00">65</text>
+</g>
+<!-- 36&#45;&#45;39 -->
+<g id="edge149" class="edge">
+<title>36--39</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M754.06,-308.65C779.28,-340.6 835.32,-411.59 860.98,-444.1"/>
+<text xml:space="preserve" text-anchor="middle" x="803.35" y="-378.56" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 37&#45;&#45;35 -->
+<g id="edge151" class="edge">
+<title>37--35</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M834.23,-314.9C786.8,-334.76 680.85,-379.12 629,-400.82"/>
+<text xml:space="preserve" text-anchor="middle" x="729.27" y="-359.57" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 50 -->
+<g id="node51" class="node">
+<title>50</title>
+<ellipse fill="#9b59b6" stroke="black" cx="976.91" cy="-90.37" rx="33.67" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="976.91" y="-87.37" font-family="Times,serif" font-size="10.00">Camarões</text>
+</g>
+<!-- 37&#45;&#45;50 -->
+<g id="edge152" class="edge">
+<title>37--50</title>
+<path fill="none" stroke="black" stroke-width="1.2" stroke-dasharray="5,2" d="M867.64,-287.71C889.83,-247.64 944.79,-148.39 967.18,-107.95"/>
+<text xml:space="preserve" text-anchor="middle" x="913.33" y="-200.37" font-family="Times,serif" font-size="8.00">60</text>
+</g>
+<!-- 38&#45;&#45;29 -->
+<g id="edge153" class="edge">
+<title>38--29</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M694.53,-97.31C696.08,-134.34 700.43,-220.62 709.81,-292.5 717.34,-350.14 736.79,-363 733.86,-421.05 730.96,-478.68 705.45,-543.14 692.11,-573.32"/>
+<text xml:space="preserve" text-anchor="middle" x="713.22" y="-331.38" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 38&#45;&#45;39 -->
+<g id="edge154" class="edge">
+<title>38--39</title>
+<path fill="none" stroke="#2980b9" stroke-width="1.5" d="M702.19,-96.62C732.34,-160.45 835.48,-378.8 865.82,-443.03"/>
+<text xml:space="preserve" text-anchor="middle" x="779.93" y="-272.07" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 39&#45;&#45;36 -->
+<g id="edge155" class="edge">
+<title>39--36</title>
+<path fill="none" stroke="#2980b9" stroke-width="2" d="M861.05,-444.18C835.43,-411.72 779.36,-340.71 754.1,-308.71"/>
+<text xml:space="preserve" text-anchor="middle" x="803.44" y="-378.67" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 57 -->
+<g id="node58" class="node">
+<title>57</title>
+<ellipse fill="#95a5a6" stroke="black" cx="816.81" cy="-86.73" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="816.81" y="-83.73" font-family="Times,serif" font-size="10.00">China</text>
+</g>
+<!-- 39&#45;&#45;57 -->
+<g id="edge156" class="edge">
+<title>39--57</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M867,-443.07C855.73,-414.46 834.45,-356.36 825.55,-304.9 812.88,-231.69 814.49,-142.69 815.94,-105"/>
+<text xml:space="preserve" text-anchor="middle" x="817.38" y="-278.79" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 40&#45;&#45;31 -->
+<g id="edge170" class="edge">
+<title>40--31</title>
+<path fill="none" stroke="black" stroke-width="1.2" stroke-dasharray="5,2" d="M983.31,-520.35C949.36,-530.93 886.78,-550.74 833.9,-569.21 761.48,-594.5 676.82,-627.03 636.19,-642.83"/>
+<text xml:space="preserve" text-anchor="middle" x="804.46" y="-580.6" font-family="Times,serif" font-size="8.00">60</text>
+</g>
+<!-- 40&#45;&#45;41 -->
+<g id="edge157" class="edge">
+<title>40--41</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M991.97,-527.22C945.3,-568.97 811.47,-688.69 764.39,-730.8"/>
+<text xml:space="preserve" text-anchor="middle" x="874.33" y="-631.27" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 42 -->
+<g id="node43" class="node">
+<title>42</title>
+<ellipse fill="#9b59b6" stroke="black" cx="859.13" cy="-713.08" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="859.13" y="-710.08" font-family="Times,serif" font-size="10.00">Suíça</text>
+</g>
+<!-- 40&#45;&#45;42 -->
+<g id="edge158" class="edge">
+<title>40--42</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M996.06,-529.04C968.02,-566.72 899.29,-659.1 871.29,-696.73"/>
+<text xml:space="preserve" text-anchor="middle" x="929.66" y="-615.31" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 43 -->
+<g id="node44" class="node">
+<title>43</title>
+<ellipse fill="#9b59b6" stroke="black" cx="866.64" cy="-584.59" rx="40.68" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="866.64" y="-581.59" font-family="Times,serif" font-size="10.00">Luxemburgo</text>
+</g>
+<!-- 40&#45;&#45;43 -->
+<g id="edge159" class="edge">
+<title>40--43</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M986.44,-523.72C961.54,-536.38 920.77,-557.09 893.82,-570.78"/>
+<text xml:space="preserve" text-anchor="middle" x="936.9" y="-549.26" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 44 -->
+<g id="node45" class="node">
+<title>44</title>
+<ellipse fill="#9b59b6" stroke="black" cx="687.02" cy="-679.88" rx="29.33" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="687.02" y="-676.88" font-family="Times,serif" font-size="10.00">Mônaco</text>
+</g>
+<!-- 40&#45;&#45;44 -->
+<g id="edge160" class="edge">
+<title>40--44</title>
+<path fill="none" stroke="#8e44ad" stroke-width="3" d="M992.1,-527.37C971.51,-545.71 934.4,-577.36 899.39,-599.98 860.02,-625.4 849.15,-630.96 805.42,-647.81 775.21,-659.44 739.14,-668.57 714.81,-674.06"/>
+<text xml:space="preserve" text-anchor="middle" x="859.14" y="-623.54" font-family="Times,serif" font-size="8.00">100</text>
+</g>
+<!-- 40&#45;&#45;45 -->
+<g id="edge161" class="edge">
+<title>40--45</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M998.7,-529.51C983.86,-557.13 956.54,-614.22 952.49,-666.68 948.11,-723.3 968.19,-788.85 979.16,-819.67"/>
+<text xml:space="preserve" text-anchor="middle" x="948.11" y="-675.08" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 46 -->
+<g id="node47" class="node">
+<title>46</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1001.51" cy="-666.68" rx="43.19" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1001.51" y="-663.68" font-family="Times,serif" font-size="10.00">Costa Marfim</text>
+</g>
+<!-- 40&#45;&#45;46 -->
+<g id="edge162" class="edge">
+<title>40--46</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M1007.46,-530.92C1006.16,-560.56 1003.61,-618.8 1002.31,-648.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1000.88" y="-592.08" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 47 -->
+<g id="node48" class="node">
+<title>47</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1224.65" cy="-114.58" rx="41.86" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1224.65" y="-111.58" font-family="Times,serif" font-size="10.00">Burkina Faso</text>
+</g>
+<!-- 40&#45;&#45;47 -->
+<g id="edge163" class="edge">
+<title>40--47</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1017.7,-495.28C1053.25,-429.89 1178.87,-198.78 1214.92,-132.48"/>
+<text xml:space="preserve" text-anchor="middle" x="1112.12" y="-316.62" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 48 -->
+<g id="node49" class="node">
+<title>48</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1005.03" cy="-335.62" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1005.03" y="-332.62" font-family="Times,serif" font-size="10.00">Mali</text>
+</g>
+<!-- 40&#45;&#45;48 -->
+<g id="edge164" class="edge">
+<title>40--48</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1007.93,-494.36C1007.31,-460.44 1005.99,-388.11 1005.37,-354.07"/>
+<text xml:space="preserve" text-anchor="middle" x="1002.65" y="-426.66" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 49 -->
+<g id="node50" class="node">
+<title>49</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1232.81" cy="-590.14" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1232.81" y="-587.14" font-family="Times,serif" font-size="10.00">Níger</text>
+</g>
+<!-- 40&#45;&#45;49 -->
+<g id="edge165" class="edge">
+<title>40--49</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1032.72,-521.08C1075.91,-535.99 1165.21,-566.81 1208.39,-581.71"/>
+<text xml:space="preserve" text-anchor="middle" x="1116.56" y="-553.8" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 40&#45;&#45;50 -->
+<g id="edge166" class="edge">
+<title>40--50</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1003.4,-494.47C995.16,-462.6 978.84,-394.42 973.53,-335.62 965.9,-251.02 972.22,-149.34 975.38,-108.58"/>
+<text xml:space="preserve" text-anchor="middle" x="967.24" y="-304.62" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 51 -->
+<g id="node52" class="node">
+<title>51</title>
+<ellipse fill="#9b59b6" stroke="black" cx="776.04" cy="-425.8" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="776.04" y="-422.8" font-family="Times,serif" font-size="10.00">Gabão</text>
+</g>
+<!-- 40&#45;&#45;51 -->
+<g id="edge167" class="edge">
+<title>40--51</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M981.18,-509.94C948.19,-505.91 891.34,-496.5 846.65,-476.33 826.45,-467.21 806.17,-451.91 792.56,-440.52"/>
+<text xml:space="preserve" text-anchor="middle" x="878.45" y="-492.1" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 52 -->
+<g id="node53" class="node">
+<title>52</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1235.1" cy="-387.53" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1235.1" y="-384.53" font-family="Times,serif" font-size="10.00">Congo</text>
+</g>
+<!-- 40&#45;&#45;52 -->
+<g id="edge168" class="edge">
+<title>40--52</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1029.19,-501.09C1072.3,-477.32 1170.54,-423.13 1213.88,-399.23"/>
+<text xml:space="preserve" text-anchor="middle" x="1117.45" y="-452.61" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 53 -->
+<g id="node54" class="node">
+<title>53</title>
+<ellipse fill="#9b59b6" stroke="black" cx="1229.86" cy="-789.1" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1229.86" y="-786.1" font-family="Times,serif" font-size="10.00">Haiti</text>
+</g>
+<!-- 40&#45;&#45;53 -->
+<g id="edge169" class="edge">
+<title>40--53</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M1021.13,-528.7C1060.3,-577.56 1177.74,-724.08 1216.95,-773"/>
+<text xml:space="preserve" text-anchor="middle" x="1115.02" y="-653.23" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 41&#45;&#45;42 -->
+<g id="edge171" class="edge">
+<title>41--42</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M773.88,-738.03C792.01,-732.72 816.03,-725.69 833.95,-720.45"/>
+<text xml:space="preserve" text-anchor="middle" x="799.99" y="-731.62" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 41&#45;&#45;43 -->
+<g id="edge172" class="edge">
+<title>41--43</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M760.04,-729.04C782.7,-698.34 830.89,-633.04 853.9,-601.86"/>
+<text xml:space="preserve" text-anchor="middle" x="802.84" y="-668.03" font-family="Times,serif" font-size="8.00">95</text>
+</g>
+<!-- 41&#45;&#45;44 -->
+<g id="edge173" class="edge">
+<title>41--44</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M733.37,-730.08C723.83,-719.75 711.34,-706.22 701.73,-695.82"/>
+<text xml:space="preserve" text-anchor="middle" x="713.58" y="-715.38" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 41&#45;&#45;54 -->
+<g id="edge174" class="edge">
+<title>41--54</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M758.65,-762.63C773.02,-785.01 798.16,-824.19 812.64,-846.74"/>
+<text xml:space="preserve" text-anchor="middle" x="781.6" y="-807.02" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 42&#45;&#45;43 -->
+<g id="edge175" class="edge">
+<title>42--43</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2.5" d="M860.21,-694.67C861.63,-670.24 864.14,-627.37 865.57,-602.97"/>
+<text xml:space="preserve" text-anchor="middle" x="858.89" y="-651.21" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 42&#45;&#45;44 -->
+<g id="edge176" class="edge">
+<title>42--44</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M832.99,-708.04C801.3,-701.92 748.08,-691.66 715.41,-685.36"/>
+<text xml:space="preserve" text-anchor="middle" x="770.57" y="-699.17" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 42&#45;&#45;54 -->
+<g id="edge177" class="edge">
+<title>42--54</title>
+<path fill="none" stroke="black" stroke-width="0.9" stroke-dasharray="5,2" d="M854.86,-731.29C848.06,-760.31 834.84,-816.72 828.03,-845.78"/>
+<text xml:space="preserve" text-anchor="middle" x="837.45" y="-790.92" font-family="Times,serif" font-size="8.00">45</text>
+</g>
+<!-- 42&#45;&#45;55 -->
+<g id="edge178" class="edge">
+<title>42--55</title>
+<path fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="5,2" d="M842.85,-727.89C810.92,-756.96 740.42,-821.15 708.63,-850.08"/>
+<text xml:space="preserve" text-anchor="middle" x="771.69" y="-791.44" font-family="Times,serif" font-size="8.00">40</text>
+</g>
+<!-- 45&#45;&#45;46 -->
+<g id="edge179" class="edge">
+<title>45--46</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" d="M987.58,-819.16C990.57,-786.38 996.82,-717.95 999.83,-685.08"/>
+<text xml:space="preserve" text-anchor="middle" x="989.7" y="-754.55" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 45&#45;&#45;47 -->
+<g id="edge180" class="edge">
+<title>45--47</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.3" d="M993.04,-819.61C1005.31,-788.68 1031.02,-722.98 1050.53,-666.68 1122.61,-458.71 1198.79,-202.52 1219.31,-132.81"/>
+<text xml:space="preserve" text-anchor="middle" x="1109.13" y="-480.73" font-family="Times,serif" font-size="8.00">65</text>
+</g>
+<!-- 45&#45;&#45;48 -->
+<g id="edge181" class="edge">
+<title>45--48</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" d="M980.31,-819.71C971.07,-788.93 953.54,-723.46 952.49,-666.68 950.25,-545.95 986.16,-403.43 999.85,-353.77"/>
+<text xml:space="preserve" text-anchor="middle" x="952.07" y="-585.73" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 46&#45;&#45;47 -->
+<g id="edge182" class="edge">
+<title>46--47</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1008.81,-648.62C1042.57,-565.09 1183.41,-216.61 1217.3,-132.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1109.01" y="-393.21" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 46&#45;&#45;48 -->
+<g id="edge183" class="edge">
+<title>46--48</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" d="M996.62,-648.34C989.42,-619.62 976.79,-562.21 976.76,-512.64 976.74,-453.98 992.08,-385.73 1000.17,-353.82"/>
+<text xml:space="preserve" text-anchor="middle" x="972.97" y="-502.89" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 46&#45;&#45;50 -->
+<g id="edge184" class="edge">
+<title>46--50</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.3" d="M997.69,-648.29C991.91,-619.51 981.16,-562.01 976.76,-512.64 962.89,-356.74 972.26,-167.18 975.76,-108.53"/>
+<text xml:space="preserve" text-anchor="middle" x="965.96" y="-381.07" font-family="Times,serif" font-size="8.00">65</text>
+</g>
+<!-- 47&#45;&#45;48 -->
+<g id="edge185" class="edge">
+<title>47--48</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1208.14,-131.19C1166.94,-172.66 1060.05,-280.25 1020.26,-320.3"/>
+<text xml:space="preserve" text-anchor="middle" x="1109.67" y="-228.67" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 47&#45;&#45;49 -->
+<g id="edge186" class="edge">
+<title>47--49</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1221.86,-132.75C1215.44,-176.54 1200.41,-291.34 1203.6,-387.53 1205.88,-456.26 1221.4,-536.85 1228.85,-572.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1199.6" y="-389.94" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 48&#45;&#45;49 -->
+<g id="edge187" class="edge">
+<title>48--49</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M1018.94,-351.16C1059.6,-396.6 1178,-528.89 1218.8,-574.49"/>
+<text xml:space="preserve" text-anchor="middle" x="1114.82" y="-465.17" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 50&#45;&#45;51 -->
+<g id="edge188" class="edge">
+<title>50--51</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" d="M962.56,-107.09C933.31,-141.85 866.16,-225.32 825.55,-304.9 807.4,-340.46 790.81,-384.26 782.21,-408.17"/>
+<text xml:space="preserve" text-anchor="middle" x="853.94" y="-250.92" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 50&#45;&#45;52 -->
+<g id="edge189" class="edge">
+<title>50--52</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M991.16,-106.77C1036.51,-158.97 1177.12,-320.8 1221.52,-371.9"/>
+<text xml:space="preserve" text-anchor="middle" x="1102.7" y="-242.15" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 51&#45;&#45;52 -->
+<g id="edge190" class="edge">
+<title>51--52</title>
+<path fill="none" stroke="#8e44ad" stroke-width="2" d="M803.04,-423.55C884.34,-416.77 1126.21,-396.61 1207.84,-389.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1001.32" y="-409.08" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 56 -->
+<g id="node57" class="node">
+<title>56</title>
+<ellipse fill="#95a5a6" stroke="black" cx="210.53" cy="-1116" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="210.53" y="-1113" font-family="Times,serif" font-size="10.00">Japão</text>
+</g>
+<!-- 58 -->
+<g id="node59" class="node">
+<title>58</title>
+<ellipse fill="#95a5a6" stroke="black" cx="1194.53" cy="-933" rx="35.18" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1194.53" y="-930" font-family="Times,serif" font-size="10.00">Coreia Sul</text>
+</g>
+<!-- 59 -->
+<g id="node60" class="node">
+<title>59</title>
+<ellipse fill="#95a5a6" stroke="black" cx="1186.53" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1186.53" y="-15" font-family="Times,serif" font-size="10.00">Rússia</text>
+</g>
+<!-- 60 -->
+<g id="node61" class="node">
+<title>60</title>
+<ellipse fill="#e67e22" stroke="black" cx="1214.71" cy="-1050.91" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="1214.71" y="-1047.91" font-family="Times,serif" font-size="10.00">Egito</text>
+</g>
+<!-- 61 -->
+<g id="node62" class="node">
+<title>61</title>
+<ellipse fill="#e67e22" stroke="black" cx="495.86" cy="-1078.97" rx="45.86" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="495.86" y="-1075.97" font-family="Times,serif" font-size="10.00">Arábia Saudita</text>
+</g>
+<!-- 60&#45;&#45;61 -->
+<g id="edge191" class="edge">
+<title>60--61</title>
+<path fill="none" stroke="#d35400" stroke-width="2" d="M1187.5,-1048.87C1104.55,-1043.09 847.58,-1028.36 636.34,-1050.2 601.55,-1053.79 562.63,-1062.11 534.6,-1068.88"/>
+<text xml:space="preserve" text-anchor="middle" x="856.83" y="-1041.2" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 62 -->
+<g id="node63" class="node">
+<title>62</title>
+<ellipse fill="#e67e22" stroke="black" cx="774.21" cy="-1075.49" rx="49.87" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="774.21" y="-1072.49" font-family="Times,serif" font-size="10.00">Emirados Árabes</text>
+</g>
+<!-- 60&#45;&#45;62 -->
+<g id="edge192" class="edge">
+<title>60--62</title>
+<path fill="none" stroke="#d35400" stroke-width="2" d="M1187.6,-1049.31C1139.61,-1046.78 1036.6,-1042.77 949.94,-1048.95 904.85,-1052.17 853.82,-1060.4 818.41,-1066.84"/>
+<text xml:space="preserve" text-anchor="middle" x="998.59" y="-1048.79" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 63 -->
+<g id="node64" class="node">
+<title>63</title>
+<ellipse fill="#e67e22" stroke="black" cx="636.34" cy="-1071.95" rx="32.66" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="636.34" y="-1068.95" font-family="Times,serif" font-size="10.00">Marrocos</text>
+</g>
+<!-- 60&#45;&#45;63 -->
+<g id="edge193" class="edge">
+<title>60--63</title>
+<path fill="none" stroke="#d35400" stroke-width="1.5" d="M1187.33,-1049.7C1118.03,-1046.95 930.12,-1041.35 774.21,-1053.74 737.63,-1056.64 695.88,-1062.52 668,-1066.81"/>
+<text xml:space="preserve" text-anchor="middle" x="923.51" y="-1049.11" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 64 -->
+<g id="node65" class="node">
+<title>64</title>
+<ellipse fill="#e67e22" stroke="black" cx="949.94" cy="-1070.71" rx="27.99" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="949.94" y="-1067.71" font-family="Times,serif" font-size="10.00">Argélia</text>
+</g>
+<!-- 60&#45;&#45;64 -->
+<g id="edge194" class="edge">
+<title>60--64</title>
+<path fill="none" stroke="#d35400" stroke-width="2" d="M1187.86,-1052.92C1137.51,-1056.68 1029.35,-1064.77 978.05,-1068.61"/>
+<text xml:space="preserve" text-anchor="middle" x="1079.31" y="-1063.14" font-family="Times,serif" font-size="8.00">80</text>
+</g>
+<!-- 61&#45;&#45;62 -->
+<g id="edge195" class="edge">
+<title>61--62</title>
+<path fill="none" stroke="#d35400" stroke-width="2.5" d="M538.47,-1086.08C566.26,-1090.06 603.36,-1094.15 636.34,-1093.71 667.72,-1093.29 702.79,-1088.6 729.7,-1084.08"/>
+<text xml:space="preserve" text-anchor="middle" x="632.43" y="-1096.11" font-family="Times,serif" font-size="8.00">90</text>
+</g>
+<!-- 61&#45;&#45;63 -->
+<g id="edge196" class="edge">
+<title>61--63</title>
+<path fill="none" stroke="#d35400" stroke-width="1.5" d="M541.86,-1076.68C562.02,-1075.67 585.23,-1074.51 603.59,-1073.59"/>
+<text xml:space="preserve" text-anchor="middle" x="569.4" y="-1077.5" font-family="Times,serif" font-size="8.00">70</text>
+</g>
+<!-- 61&#45;&#45;64 -->
+<g id="edge197" class="edge">
+<title>61--64</title>
+<path fill="none" stroke="#d35400" stroke-width="1.3" d="M540.08,-1084.51C567.7,-1087.75 604.04,-1091.6 636.34,-1093.71 697.51,-1097.7 713.03,-1101.05 774.21,-1097.25 827.33,-1093.94 888.65,-1083.04 923,-1076.28"/>
+<text xml:space="preserve" text-anchor="middle" x="727.9" y="-1101.3" font-family="Times,serif" font-size="8.00">65</text>
+</g>
+<!-- 62&#45;&#45;63 -->
+<g id="edge198" class="edge">
+<title>62--63</title>
+<path fill="none" stroke="#d35400" stroke-width="1.5" d="M724.05,-1074.2C705.72,-1073.73 685.48,-1073.21 669.07,-1072.79"/>
+<text xml:space="preserve" text-anchor="middle" x="691.84" y="-1075.88" font-family="Times,serif" font-size="8.00">75</text>
+</g>
+<!-- 63&#45;&#45;40 -->
+<g id="edge200" class="edge">
+<title>63--40</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M648.41,-1054.96C673.62,-1019.48 733.74,-934.91 784.32,-864.06 827.38,-803.73 840.73,-790.43 881.4,-728.46 885.78,-721.8 886.56,-719.93 890.63,-713.08 930.77,-645.41 978.01,-564.53 998.24,-529.83"/>
+<text xml:space="preserve" text-anchor="middle" x="828.14" y="-801.46" font-family="Times,serif" font-size="8.00">50</text>
+</g>
+<!-- 63&#45;&#45;64 -->
+<g id="edge199" class="edge">
+<title>63--64</title>
+<path fill="none" stroke="#d35400" stroke-width="2" d="M667.4,-1065.79C695.24,-1060.76 737.28,-1054.38 774.21,-1053.74 826.92,-1052.81 888.13,-1060.79 922.62,-1066.13"/>
+<text xml:space="preserve" text-anchor="middle" x="790.95" y="-1056.2" font-family="Times,serif" font-size="8.00">85</text>
+</g>
+<!-- 64&#45;&#45;40 -->
+<g id="edge201" class="edge">
+<title>64--40</title>
+<path fill="none" stroke="black" stroke-width="1.1" stroke-dasharray="5,2" d="M947.86,-1052.39C941.82,-994.93 926.26,-813.41 952.49,-666.68 961.69,-615.16 986.48,-558.12 999.69,-530.12"/>
+<text xml:space="preserve" text-anchor="middle" x="935.4" y="-791.75" font-family="Times,serif" font-size="8.00">55</text>
+</g>
+</g>
+</svg>
