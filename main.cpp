@@ -325,7 +325,7 @@ public:
     escreverLinha("[9] 🔍 Apresentar conexidade e reduzido");
     escreverLinha("");
     escreverLinha("[10] 📈 Estatísticas e análises");
-    escreverLinha("[11] ✈️ Buscar rota de expansão");
+    escreverLinha("[11] 🛒 Compatibilidade do produto (sem tradução)");
     escreverLinha("[12] 🏷️ Buscar país por ID/Nome");
     escreverLinha("[0] 🚪 Encerrar aplicação");
     cout << "└" << linha << "┘\n";
@@ -966,19 +966,36 @@ public:
       cout << "] " << grau << " conexões\n";
     }
 
-    unordered_map<string, int> somaPesos;
-    for (int i = 0; i < numVertices; ++i) {
-      for (const auto &viz : adj[i]) {
-        if (i < viz.first) {
-          string chave = grupoVertices[i] + "-" + grupoVertices[viz.first];
-          somaPesos[chave] += viz.second;
-        }
+    // cálculo de "pontes" focado em países (força para fora do grupo)
+    // Mostrar países com maior força de comunicação fora do próprio grupo
+    vector<pair<int, int>> fora; // (somaFora, id)
+    fora.reserve(numVertices);
+    for (int v = 0; v < numVertices; ++v) {
+      int somaFora = 0;
+      const string &g = grupoVertices[v];
+      for (const auto &e : adj[v]) {
+        if (grupoVertices[e.first] != g) somaFora += e.second;
       }
+      fora.push_back({somaFora, v});
     }
-
-    cout << "\n🌡️ FORÇA DAS CONEXÕES POR GRUPO:\n";
-    for (const auto &entrada : somaPesos) {
-      cout << "   " << entrada.first << " → " << entrada.second << '\n';
+    sort(fora.begin(), fora.end(), [&](const pair<int,int>& a, const pair<int,int>& b){
+      if (a.first != b.first) return a.first > b.first;
+      return nomeVertices[a.second] < nomeVertices[b.second];
+    });
+    cout << "\n🌉 PAÍSES QUE MELHOR SE COMUNICAM FORA DO SEU GRUPO:\n";
+    int mostrar = 0;
+    int maxSoma = fora.empty() ? 0 : max(0, fora.front().first);
+    for (size_t i = 0; i < fora.size() && mostrar < 10; ++i) {
+      int soma = fora[i].first;
+      if (soma <= 0) break;
+      int id = fora[i].second;
+      int barras = maxSoma > 0 ? static_cast<int>(round(20.0 * soma / maxSoma)) : 0;
+      barras = min(20, max(1, barras));
+      cout << setw(12) << nomeVertices[id] << " [";
+      for (int b = 0; b < barras; ++b) cout << "█";
+      for (int b = barras; b < 20; ++b) cout << ' ';
+      cout << "] " << soma << " fora do grupo\n";
+      ++mostrar;
     }
 
     if (!graus.empty()) {
@@ -1116,6 +1133,148 @@ public:
     cout << "• Número de traduções necessárias: " << (caminho.size() - 1)
          << '\n';
     cout << "• Países no caminho: " << caminho.size() << '\n';
+  }
+
+  // ===== Planejador de expansão – utilitários =====
+  pair<vector<int>, vector<int>> dijkstraCompleto(int origem) {
+    const int INF = numeric_limits<int>::max();
+    vector<int> dist(numVertices, INF), ant(numVertices, -1);
+    using Item = pair<int, int>; // dist, v
+    priority_queue<Item, vector<Item>, greater<Item>> pq;
+    dist[origem] = 0;
+    pq.push({0, origem});
+    while (!pq.empty()) {
+      auto topo = pq.top();
+      pq.pop();
+      int d = topo.first;
+      int v = topo.second;
+      if (d != dist[v])
+        continue;
+      for (const auto &e : adj[v]) {
+        int u = e.first, w = e.second;
+        if (dist[v] != INF && dist[v] + w < dist[u]) {
+          dist[u] = dist[v] + w;
+          ant[u] = v;
+          pq.push({dist[u], u});
+        }
+      }
+    }
+    return {dist, ant};
+  }
+
+  vector<int> bfsSaltos(int origem) {
+    vector<int> hop(numVertices, -1);
+    queue<int> q;
+    hop[origem] = 0;
+    q.push(origem);
+    while (!q.empty()) {
+      int v = q.front();
+      q.pop();
+      for (const auto &e : adj[v]) {
+        int u = e.first;
+        if (hop[u] != -1)
+          continue;
+        hop[u] = hop[v] + 1;
+        q.push(u);
+      }
+    }
+    return hop;
+  }
+
+  void mostrarAlcancePorCusto(int origem, int maxCusto) {
+    if (!grafoCarregado())
+      return;
+    if (!indiceValido(origem) || maxCusto < 0) {
+      cout << RED << "❌ Parâmetros inválidos." << RESET << '\n';
+      return;
+    }
+    cout << CYAN << "\n🎯 Alcance por custo (origem: " << nomeVertices[origem]
+         << ", orçamento: " << maxCusto << ")\n" << RESET;
+    auto pack = dijkstraCompleto(origem);
+    const auto &dist = pack.first;
+    vector<pair<int, int>> lista; // (dist, v)
+    for (int v = 0; v < numVertices; ++v) {
+      if (v == origem)
+        continue;
+      if (dist[v] != numeric_limits<int>::max() && dist[v] <= maxCusto)
+        lista.push_back({dist[v], v});
+    }
+    sort(lista.begin(), lista.end(), [&](const pair<int, int> &a, const pair<int, int> &b) {
+      if (a.first != b.first) return a.first < b.first;
+      return nomeVertices[a.second] < nomeVertices[b.second];
+    });
+    if (lista.empty()) {
+      cout << YELLOW << "   ⚠️  Nenhum país alcançado dentro do orçamento." << RESET << '\n';
+      return;
+    }
+    for (const auto &it : lista) {
+      int v = it.second; int d = it.first;
+      cout << "   " << corParaGrupo(grupoVertices[v])
+           << "[" << v << "] " << nomeVertices[v] << RESET
+           << " (custo: " << d << ")\n";
+    }
+    cout << "   Total: " << lista.size() << " / " << (numVertices - 1) << " países\n";
+  }
+
+  void mostrarAlcancePorSaltos(int origem, int maxSaltos) {
+    if (!grafoCarregado())
+      return;
+    if (!indiceValido(origem) || maxSaltos < 0) {
+      cout << RED << "❌ Parâmetros inválidos." << RESET << '\n';
+      return;
+    }
+    cout << CYAN << "\n🎯 Alcance por saltos (origem: " << nomeVertices[origem]
+         << ", até " << maxSaltos << " salto(s))\n" << RESET;
+    auto hops = bfsSaltos(origem);
+    vector<pair<int, int>> lista; // (hops, v)
+    for (int v = 0; v < numVertices; ++v) {
+      if (v == origem)
+        continue;
+      if (hops[v] != -1 && hops[v] <= maxSaltos)
+        lista.push_back({hops[v], v});
+    }
+    sort(lista.begin(), lista.end(), [&](const pair<int, int> &a, const pair<int, int> &b) {
+      if (a.first != b.first) return a.first < b.first;
+      return nomeVertices[a.second] < nomeVertices[b.second];
+    });
+    if (lista.empty()) {
+      cout << YELLOW << "   ⚠️  Nenhum país alcançado dentro do limite de saltos." << RESET << '\n';
+      return;
+    }
+    for (const auto &it : lista) {
+      int v = it.second; int h = it.first;
+      cout << "   " << corParaGrupo(grupoVertices[v])
+           << "[" << v << "] " << nomeVertices[v] << RESET
+           << " (saltos: " << h << ")\n";
+    }
+    cout << "   Total: " << lista.size() << " / " << (numVertices - 1) << " países\n";
+  }
+
+  void mostrarCompatibilidadeSemTraducao(int origem) {
+    if (!grafoCarregado())
+      return;
+    if (!indiceValido(origem)) {
+      cout << RED << "❌ Parâmetros inválidos." << RESET << '\n';
+      return;
+    }
+    const string grupo = grupoVertices[origem];
+    cout << CYAN << "\n🛡️ Compatibilidade sem tradução (origem: " << nomeVertices[origem]
+         << ")\n" << RESET;
+    vector<int> lista;
+    for (int v = 0; v < numVertices; ++v) {
+      if (v == origem) continue;
+      if (grupoVertices[v] == grupo) lista.push_back(v);
+    }
+    sort(lista.begin(), lista.end(), [&](int a, int b){ return nomeVertices[a] < nomeVertices[b]; });
+    if (lista.empty()) {
+      cout << YELLOW << "   ⚠️  Nenhum país do mesmo grupo encontrado." << RESET << '\n';
+      return;
+    }
+    for (int v : lista) {
+      cout << "   " << corParaGrupo(grupoVertices[v])
+           << "[" << v << "] " << nomeVertices[v] << RESET << '\n';
+    }
+    cout << "   Total: " << lista.size() << " país(es) compatível(is) sem tradução\n";
   }
 };
 
@@ -1336,20 +1495,12 @@ int main() {
       break;
     }
     case 11: {
-      cout << CYAN << "\n✈️  PLANEJADOR DE EXPANSÃO\n" << RESET;
+      cout << CYAN << "\n🛒 COMPATIBILIDADE DO PRODUTO (SEM TRADUÇÃO)\n" << RESET;
       int origem = solicitarVertice(
           grafo, "País de origem (ID ou nome, ou 'cancelar'): ");
-      if (origem < 0) {
-        solicitarEnter();
-        break;
+      if (origem >= 0) {
+        grafo.mostrarCompatibilidadeSemTraducao(origem);
       }
-      int destino = solicitarVertice(
-          grafo, "País de destino (ID ou nome, ou 'cancelar'): ");
-      if (destino < 0) {
-        solicitarEnter();
-        break;
-      }
-      grafo.buscarCaminhoLinguistico(origem, destino);
       solicitarEnter();
       break;
     }
