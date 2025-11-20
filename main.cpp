@@ -304,6 +304,50 @@ private:
 public:
   void limparTela() { cout << "\033[2J\033[H"; }
 
+  void mostrarAjuda() {
+    limparTela();
+    cout << CYAN
+         << "╔════════════════════════════════════════════════════════════╗\n"
+         << "║ ❓  CENTRAL DE AJUDA E DOCUMENTAÇÃO                        ║\n"
+         << "╚════════════════════════════════════════════════════════════╝\n"
+         << RESET;
+
+    cout << "\n" << BOLD << "📌 VISÃO GERAL DO SISTEMA" << RESET << "\n";
+    cout << "   Este software utiliza a Teoria dos Grafos para analisar barreiras e conexões\n"
+         << "   linguísticas entre países. Cada " << BOLD << "Vértice" << RESET << " é um país e cada " << BOLD << "Aresta" << RESET << " representa\n"
+         << "   o grau de proximidade linguística (peso menor = maior similaridade).\n\n";
+
+    cout << BOLD << "📂 OPERAÇÕES BÁSICAS" << RESET << "\n";
+    cout << "   " << CYAN << "[1] Ler dados:" << RESET << " Carrega a base de dados 'grafo.txt'. " << YELLOW << "(Faça isso primeiro!)" << RESET << "\n";
+    cout << "   " << CYAN << "[2] Gravar dados:" << RESET << " Salva todas as alterações feitas na memória para o arquivo.\n";
+    cout << "   " << CYAN << "[7] Ver arquivo:" << RESET << " Exibe o conteúdo bruto do arquivo de texto carregado.\n";
+    cout << "   " << CYAN << "[0] Sair:" << RESET << " Encerra o programa.\n\n";
+
+    cout << BOLD << "✏️  EDIÇÃO DO GRAFO" << RESET << "\n";
+    cout << "   " << CYAN << "[3] Inserir Vértice:" << RESET << " Adiciona um novo país ao sistema.\n";
+    cout << "   " << CYAN << "[4] Inserir Aresta:" << RESET << " Cria uma conexão entre dois países.\n";
+    cout << "       " << YELLOW << "Exemplo:" << RESET << " Conectar Brasil -> Portugal com peso 5 (muito próximos).\n";
+    cout << "   " << CYAN << "[5/6] Remover:" << RESET << " Exclui países ou conexões existentes.\n\n";
+
+    cout << BOLD << "📊 ANÁLISE E VISUALIZAÇÃO" << RESET << "\n";
+    cout << "   " << CYAN << "[8] Mostrar Grafo:" << RESET << " Lista visual de todos os países e seus vizinhos.\n";
+    cout << "   " << CYAN << "[9] Conexidade:" << RESET << " Verifica se o grafo é conexo (todos alcançam todos) e\n";
+    cout << "       mostra a matriz reduzida de conexões entre grupos (ex: Lusófonos vs Anglófonos).\n";
+    cout << "   " << CYAN << "[10] Estatísticas:" << RESET << " Exibe os maiores 'Hubs' (países mais conectados) e\n";
+    cout << "        análise de pontes (conexões vitais entre grupos diferentes).\n";
+    cout << "   " << CYAN << "[12] Buscar:" << RESET << " Localiza o ID de um país pelo nome (busca parcial suportada).\n\n";
+
+    cout << BOLD << "🚀 FERRAMENTAS AVANÇADAS (PROJETO 2)" << RESET << "\n";
+    cout << "   " << CYAN << "[11] Compatibilidade:" << RESET << " Lista países do mesmo grupo que não precisam de tradução.\n";
+    cout << "   " << CYAN << "[13] Coloração:" << RESET << " Divide os países em grupos de cores onde vizinhos nunca têm a\n";
+    cout << "        mesma cor (útil para alocação de recursos ou frequências).\n";
+    cout << "   " << CYAN << "[14] Rota Ótima (Dijkstra):" << RESET << " Calcula o caminho mais 'barato' entre dois países.\n";
+    cout << "        Usa o peso das arestas como 'custo' de tradução/adaptação.\n";
+    cout << "   " << CYAN << "[15] Alcance de Mercado:" << RESET << " Simula a expansão de um produto/mensagem.\n";
+    cout << "        " << BOLD << "• Por Custo:" << RESET << " Até onde chego com um orçamento X?\n";
+    cout << "        " << BOLD << "• Por Saltos:" << RESET << " Até onde chego traduzindo no máximo N vezes?\n";
+  }
+
   void mostrarCabecalho() {
     limparTela();
     cout << CYAN
@@ -342,6 +386,7 @@ public:
     escreverLinha("[14] 🚀 Rota linguística ótima (Dijkstra)");
     escreverLinha("[15] 🌐 Alcance de mercado (custo/saltos)");
     escreverLinha("");
+    escreverLinha("[99] ❓ Ajuda e Exemplos");
     escreverLinha("[0] 🚪 Encerrar aplicação");
     cout << "└" << linha << "┘\n";
   }
@@ -1966,6 +2011,13 @@ int main() {
         break;
       }
 
+      cout << "\n👉 O que digitar (guia rápido):\n";
+      cout << "   • Pesos das arestas vão de 0 a 100 (90-100 = mesma língua, 50-70 = próximas, 20-40 = fracas).\n";
+      cout << "   • Por custo: digite um orçamento aproximado. Ex: 30 = mercados muito próximos; 60 = moderado;\n";
+      cout << "     90+ = quase todos os mercados conectados pela língua chegam.\n";
+      cout << "   • Por saltos: é o número de traduções em sequência. Ex: 1 = mesma língua/grupo;\n";
+      cout << "     2 = usar um país-ponte; 3 = chegar em mercados mais distantes.\n\n";
+
       cout << "\nEscolha o critério de alcance:\n";
       cout << " 1 - Por custo (orçamento máximo em peso das arestas)\n";
       cout << " 2 - Por saltos (número máximo de traduções)\n";
@@ -1990,7 +2042,7 @@ int main() {
       if (escolha == 1) {
         int orcamento = -1;
         while (orcamento < 0 && !cancelado) {
-          cout << "Orçamento máximo (inteiro >= 0, ou 'cancelar'): ";
+          cout << "Orçamento máximo em custo agregado (ex: 50, 120, 200, ou 'cancelar'): ";
           string ent;
           getline(cin, ent);
           ent = trim(ent);
@@ -2021,7 +2073,7 @@ int main() {
       } else if (escolha == 2) {
         int saltos = -1;
         while (saltos < 0 && !cancelado) {
-          cout << "Máximo de saltos (inteiro >= 0, ou 'cancelar'): ";
+          cout << "Máximo de saltos/traduções consecutivas (ex: 1, 2, 3, ou 'cancelar'): ";
           string ent;
           getline(cin, ent);
           ent = trim(ent);
@@ -2053,6 +2105,11 @@ int main() {
         cout << RED << "❌ Opção inválida." << RESET << '\n';
       }
 
+      solicitarEnter();
+      break;
+    }
+    case 99: {
+      grafo.mostrarAjuda();
       solicitarEnter();
       break;
     }
