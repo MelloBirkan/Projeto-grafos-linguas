@@ -21,6 +21,7 @@
 #include <numeric>
 #include <queue>
 #include <set>
+#include <tuple>
 #include <sstream>
 #include <string>
 #include <thread>
@@ -338,8 +339,8 @@ public:
     escreverLinha("");
     escreverLinha("🆕 NOVOS RECURSOS (Projeto 2):");
     escreverLinha("[13] 🎨 Coloração do Grafo e Número Cromático");
-    escreverLinha("[14] 🔄 Análise Euleriana (Caminho/Ciclo)");
-    escreverLinha("[15] 🌳 Árvore Geradora Mínima (Prim)");
+    escreverLinha("[14] 🚀 Rota linguística ótima (Dijkstra)");
+    escreverLinha("[15] 🌐 Alcance de mercado (custo/saltos)");
     escreverLinha("");
     escreverLinha("[0] 🚪 Encerrar aplicação");
     cout << "└" << linha << "┘\n";
@@ -1635,9 +1636,11 @@ public:
     cout << "   │ País A                   │ País B                   │  Peso  │\n";
     cout << "   ├──────────────────────────┼──────────────────────────┼────────┤\n";
 
-    // Ordenar por peso para melhor visualização
+    // Ordenar por peso para melhor visualização (C++11-friendly)
     sort(arestasMST.begin(), arestasMST.end(),
-         [](const auto &a, const auto &b) { return get<2>(a) < get<2>(b); });
+         [](const tuple<int, int, int> &a, const tuple<int, int, int> &b) {
+           return get<2>(a) < get<2>(b);
+         });
 
     for (const auto &aresta : arestasMST) {
       int u = get<0>(aresta);
@@ -1931,12 +1934,125 @@ int main() {
       break;
     }
     case 14: {
-      grafo.analisarPropriedadesEulerianas();
+      cout << CYAN << "\n🚀 ROTA LINGUÍSTICA ÓTIMA (DIJKSTRA)\n" << RESET;
+      int origem = solicitarVertice(
+          grafo, "País de origem (ID ou nome, ou 'cancelar'): ");
+      if (origem < 0) {
+        solicitarEnter();
+        break;
+      }
+      int destino = solicitarVertice(
+          grafo, "País de destino (ID ou nome, ou 'cancelar'): ");
+      if (destino < 0) {
+        solicitarEnter();
+        break;
+      }
+      if (origem == destino) {
+        cout << YELLOW << "⚠️  Origem e destino são o mesmo país." << RESET
+             << '\n';
+        solicitarEnter();
+        break;
+      }
+      grafo.buscarCaminhoLinguistico(origem, destino);
       solicitarEnter();
       break;
     }
     case 15: {
-      grafo.arvoreGeradoraMinimaPrim();
+      cout << CYAN << "\n🌐 MAPA DE ALCANCE DE MERCADO\n" << RESET;
+      int origem = solicitarVertice(
+          grafo, "País de partida (ID ou nome, ou 'cancelar'): ");
+      if (origem < 0) {
+        solicitarEnter();
+        break;
+      }
+
+      cout << "\nEscolha o critério de alcance:\n";
+      cout << " 1 - Por custo (orçamento máximo em peso das arestas)\n";
+      cout << " 2 - Por saltos (número máximo de traduções)\n";
+      cout << "Opção [1]: ";
+      string entrada;
+      getline(cin, entrada);
+      entrada = trim(entrada);
+      if (entrada.empty())
+        entrada = "1";
+
+      int escolha = -1;
+      if (ehNumeroInteiro(entrada)) {
+        try {
+          escolha = stoi(entrada);
+        } catch (const exception &) {
+          escolha = -1;
+        }
+      }
+
+      bool cancelado = false;
+
+      if (escolha == 1) {
+        int orcamento = -1;
+        while (orcamento < 0 && !cancelado) {
+          cout << "Orçamento máximo (inteiro >= 0, ou 'cancelar'): ";
+          string ent;
+          getline(cin, ent);
+          ent = trim(ent);
+          string cmd = normalizarTexto(ent);
+          if (cmd == "cancelar" || cmd == "sair") {
+            cout << YELLOW << "⚠️  Operação cancelada." << RESET << '\n';
+            cancelado = true;
+            break;
+          }
+          if (!ehNumeroInteiro(ent)) {
+            cout << RED << "❌ Valor inválido." << RESET << '\n';
+            continue;
+          }
+          try {
+            orcamento = stoi(ent);
+          } catch (const exception &) {
+            cout << RED << "❌ Valor inválido." << RESET << '\n';
+            continue;
+          }
+          if (orcamento < 0) {
+            cout << RED << "❌ Informe um número não negativo." << RESET
+                 << '\n';
+          }
+        }
+        if (!cancelado) {
+          grafo.mostrarAlcancePorCusto(origem, orcamento);
+        }
+      } else if (escolha == 2) {
+        int saltos = -1;
+        while (saltos < 0 && !cancelado) {
+          cout << "Máximo de saltos (inteiro >= 0, ou 'cancelar'): ";
+          string ent;
+          getline(cin, ent);
+          ent = trim(ent);
+          string cmd = normalizarTexto(ent);
+          if (cmd == "cancelar" || cmd == "sair") {
+            cout << YELLOW << "⚠️  Operação cancelada." << RESET << '\n';
+            cancelado = true;
+            break;
+          }
+          if (!ehNumeroInteiro(ent)) {
+            cout << RED << "❌ Valor inválido." << RESET << '\n';
+            continue;
+          }
+          try {
+            saltos = stoi(ent);
+          } catch (const exception &) {
+            cout << RED << "❌ Valor inválido." << RESET << '\n';
+            continue;
+          }
+          if (saltos < 0) {
+            cout << RED << "❌ Informe um número não negativo." << RESET
+                 << '\n';
+          }
+        }
+        if (!cancelado) {
+          grafo.mostrarAlcancePorSaltos(origem, saltos);
+        }
+      } else {
+        cout << RED << "❌ Opção inválida." << RESET << '\n';
+      }
+
       solicitarEnter();
       break;
     }

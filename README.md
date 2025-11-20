@@ -63,6 +63,18 @@
    - Rotas de intercâmbio com menor barreira linguística
    - Países-ponte para aprendizado multilíngue
 
+### 🆕 Recursos do Projeto 2 (aderentes ao produto)
+
+1. **🚀 Rota linguística ótima (opção 14 no menu)**
+   - Calcula o caminho de menor custo de tradução entre dois países.
+   - Uso prático: definir a sequência de expansão/localização que minimiza esforço e investimento entre origem e destino, aproveitando similaridades linguísticas em cada salto.
+
+2. **🌐 Alcance de mercado (opção 15 no menu)**
+   - Lista os países alcançáveis a partir de um país de origem em dois cenários:
+     - **Por custo**: dentro de um orçamento máximo (soma dos pesos das arestas).
+     - **Por saltos**: dentro de um número máximo de traduções interdependentes.
+   - Uso prático: priorizar mercados “fáceis” de entrar com o budget atual e estimar a cobertura que se consegue com N traduções, alinhado à priorização de investimentos em localização.
+
 ### 🔧 Algoritmos Aplicáveis
 
 1. **Dijkstra** - Caminho mínimo linguístico
