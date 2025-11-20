@@ -315,7 +315,7 @@ public:
 
   void mostrarMenuPrincipal() {
     cout << YELLOW << "\n📋 MENU PRINCIPAL:\n" << RESET;
-    constexpr int larguraInterna = 52;
+    constexpr int larguraInterna = 60;
     const string linha = repetirSimbolo("─", larguraInterna);
     auto escreverLinha = [&](const string &conteudo) {
       cout << "│ " << alinharMenu(conteudo, larguraInterna - 2) << " │\n";
@@ -335,6 +335,12 @@ public:
     escreverLinha("[10] 📈 Estatísticas e análises");
     escreverLinha("[11] 🛒 Compatibilidade do produto (sem tradução)");
     escreverLinha("[12] 🏷️ Buscar país por ID/Nome");
+    escreverLinha("");
+    escreverLinha("🆕 NOVOS RECURSOS (Projeto 2):");
+    escreverLinha("[13] 🎨 Coloração do Grafo e Número Cromático");
+    escreverLinha("[14] 🔄 Análise Euleriana (Caminho/Ciclo)");
+    escreverLinha("[15] 🌳 Árvore Geradora Mínima (Prim)");
+    escreverLinha("");
     escreverLinha("[0] 🚪 Encerrar aplicação");
     cout << "└" << linha << "┘\n";
   }
@@ -1290,6 +1296,378 @@ public:
     }
     cout << "   Total: " << lista.size() << " país(es) compatível(is) sem tradução\n";
   }
+
+  void colorirGrafo() {
+    if (!grafoCarregado())
+      return;
+
+    cout << MAGENTA << "\n╔════════════════════════════════════════════════════════════════╗\n"
+         << "║ 🎨  COLORAÇÃO DO GRAFO E NÚMERO CROMÁTICO                      ║\n"
+         << "╚════════════════════════════════════════════════════════════════╝\n"
+         << RESET;
+
+    animacaoLoading("Calculando coloração do grafo...");
+
+    // Algoritmo Greedy Coloring
+    vector<int> cor(numVertices, -1); // -1 significa sem cor
+    cor[0] = 0; // Primeira cor para o primeiro vértice
+
+    // Array temporário para marcar cores disponíveis
+    vector<bool> coresDisponiveis(numVertices, true);
+
+    // Atribuir cores aos vértices restantes
+    for (int v = 1; v < numVertices; ++v) {
+      // Marcar cores dos vizinhos como indisponíveis
+      for (const auto &viz : adj[v]) {
+        int u = viz.first;
+        if (cor[u] != -1) {
+          coresDisponiveis[cor[u]] = false;
+        }
+      }
+
+      // Encontrar a primeira cor disponível
+      int corEscolhida = 0;
+      for (int c = 0; c < numVertices; ++c) {
+        if (coresDisponiveis[c]) {
+          corEscolhida = c;
+          break;
+        }
+      }
+
+      cor[v] = corEscolhida;
+
+      // Resetar cores disponíveis para o próximo vértice
+      fill(coresDisponiveis.begin(), coresDisponiveis.end(), true);
+    }
+
+    // Calcular número cromático (número de cores usadas)
+    int numeroCromatico = 0;
+    for (int c : cor) {
+      numeroCromatico = max(numeroCromatico, c + 1);
+    }
+
+    cout << GREEN << "✅ COLORAÇÃO CONCLUÍDA!\n" << RESET;
+    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
+
+    cout << CYAN << "📊 NÚMERO CROMÁTICO: " << BOLD << numeroCromatico << RESET << " cores\n\n";
+    cout << "💡 Interpretação: O grafo pode ser dividido em " << numeroCromatico
+         << " partições onde nenhum país\n   dentro da mesma partição tem conexão "
+         << "linguística direta.\n\n";
+
+    // Agrupar países por cor
+    unordered_map<int, vector<int>> gruposPorCor;
+    for (int v = 0; v < numVertices; ++v) {
+      gruposPorCor[cor[v]].push_back(v);
+    }
+
+    cout << CYAN << "🎨 DISTRIBUIÇÃO POR COR:\n" << RESET;
+    cout << "   ┌────────┬─────────────────────────────────────────────────┐\n";
+    cout << "   │  Cor   │ Países                                          │\n";
+    cout << "   ├────────┼─────────────────────────────────────────────────┤\n";
+
+    const vector<string> nomesCores = {
+        "🔴 Vermelho", "🔵 Azul", "🟢 Verde", "🟡 Amarelo",
+        "🟣 Roxo", "🟠 Laranja", "🟤 Marrom", "⚫ Preto",
+        "⚪ Branco", "🔷 Azul Claro"};
+
+    for (int c = 0; c < numeroCromatico; ++c) {
+      string nomeCor =
+          c < static_cast<int>(nomesCores.size()) ? nomesCores[c] : ("Cor " + to_string(c));
+      const auto &paises = gruposPorCor[c];
+
+      cout << "   │ " << left << setw(6) << nomeCor << right << " │ ";
+
+      for (size_t i = 0; i < paises.size(); ++i) {
+        int id = paises[i];
+        cout << nomeVertices[id] << "[" << id << "]";
+        if (i + 1 < paises.size()) {
+          cout << ", ";
+        }
+        // Quebra de linha se muito longo
+        if (i > 0 && (i + 1) % 3 == 0 && i + 1 < paises.size()) {
+          cout << "\n   │        │ ";
+        }
+      }
+      cout << '\n';
+      if (c + 1 < numeroCromatico) {
+        cout << "   ├────────┼─────────────────────────────────────────────────┤\n";
+      }
+    }
+    cout << "   └────────┴─────────────────────────────────────────────────┘\n";
+
+    // Estatísticas adicionais
+    cout << CYAN << "\n📈 ESTATÍSTICAS DA COLORAÇÃO:\n" << RESET;
+    cout << "   • Total de países: " << numVertices << '\n';
+    cout << "   • Número cromático: " << numeroCromatico << '\n';
+    cout << "   • Maior grupo de mesma cor: ";
+    int maiorGrupo = 0;
+    for (const auto &par : gruposPorCor) {
+      maiorGrupo = max(maiorGrupo, static_cast<int>(par.second.size()));
+    }
+    cout << maiorGrupo << " países\n";
+    cout << "   • Menor grupo de mesma cor: ";
+    int menorGrupo = numVertices;
+    for (const auto &par : gruposPorCor) {
+      menorGrupo = min(menorGrupo, static_cast<int>(par.second.size()));
+    }
+    cout << menorGrupo << " país(es)\n";
+  }
+
+  void analisarPropriedadesEulerianas() {
+    if (!grafoCarregado())
+      return;
+
+    cout << MAGENTA << "\n╔════════════════════════════════════════════════════════════════╗\n"
+         << "║ 🔄  ANÁLISE DE PROPRIEDADES EULERIANAS                         ║\n"
+         << "╚════════════════════════════════════════════════════════════════╝\n"
+         << RESET;
+
+    animacaoLoading("Analisando propriedades eulerianas...");
+
+    // Verificar conectividade
+    auto componentes = componentesConexos();
+    bool conexo = componentes.size() <= 1;
+
+    if (!conexo) {
+      cout << RED << "❌ O grafo NÃO é conexo!" << RESET << '\n';
+      cout << YELLOW << "   ⚠️  Um grafo desconexo não pode ter caminho ou ciclo euleriano.\n"
+           << RESET;
+      cout << "   • Componentes conectados: " << componentes.size() << '\n';
+      return;
+    }
+
+    cout << GREEN << "✅ Grafo conexo - análise euleriana possível!\n" << RESET;
+    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
+
+    // Contar vértices com grau ímpar
+    int verticesGrauImpar = 0;
+    vector<int> idsGrauImpar;
+
+    for (int v = 0; v < numVertices; ++v) {
+      if (grauVertices[v] % 2 != 0) {
+        verticesGrauImpar++;
+        idsGrauImpar.push_back(v);
+      }
+    }
+
+    cout << CYAN << "📊 ANÁLISE DE GRAUS:\n" << RESET;
+    cout << "   • Total de vértices: " << numVertices << '\n';
+    cout << "   • Vértices com grau par: " << (numVertices - verticesGrauImpar)
+         << '\n';
+    cout << "   • Vértices com grau ímpar: " << verticesGrauImpar << '\n';
+
+    if (verticesGrauImpar > 0 && verticesGrauImpar <= 10) {
+      cout << "\n   Países com grau ímpar:\n";
+      for (int id : idsGrauImpar) {
+        cout << "      [" << id << "] " << nomeVertices[id] << " (grau: "
+             << grauVertices[id] << ")\n";
+      }
+    }
+
+    // Determinar propriedades eulerianas
+    bool temCicloEuleriano = (verticesGrauImpar == 0);
+    bool temCaminhoEuleriano = (verticesGrauImpar == 2);
+
+    cout << CYAN << "\n🔍 RESULTADO DA ANÁLISE:\n" << RESET;
+    cout << "   ┌─────────────────────────────┬──────────────────┐\n";
+    cout << "   │ Propriedade                 │ Status           │\n";
+    cout << "   ├─────────────────────────────┼──────────────────┤\n";
+
+    cout << "   │ Ciclo Euleriano             │ ";
+    if (temCicloEuleriano) {
+      cout << GREEN << "✅ SIM         " << RESET;
+    } else {
+      cout << RED << "❌ NÃO         " << RESET;
+    }
+    cout << " │\n";
+
+    cout << "   │ Caminho Euleriano           │ ";
+    if (temCaminhoEuleriano) {
+      cout << GREEN << "✅ SIM         " << RESET;
+    } else if (temCicloEuleriano) {
+      cout << GREEN << "✅ SIM*        " << RESET; // Ciclo implica caminho
+    } else {
+      cout << RED << "❌ NÃO         " << RESET;
+    }
+    cout << " │\n";
+
+    cout << "   └─────────────────────────────┴──────────────────┘\n";
+
+    // Explicação dos resultados
+    cout << CYAN << "\n💡 INTERPRETAÇÃO:\n" << RESET;
+
+    if (temCicloEuleriano) {
+      cout << "   🎉 " << BOLD << "CICLO EULERIANO EXISTE!" << RESET << '\n';
+      cout << "   → Todos os vértices têm grau par.\n";
+      cout << "   → É possível percorrer TODAS as arestas exatamente uma vez\n";
+      cout << "     e retornar ao ponto de partida.\n";
+      cout << "   → Aplicação: Rota de tradução que visita todas as conexões\n";
+      cout << "     linguísticas uma única vez e retorna ao país de origem.\n";
+    } else if (temCaminhoEuleriano) {
+      cout << "   ✓ " << BOLD << "CAMINHO EULERIANO EXISTE!" << RESET << '\n';
+      cout << "   → Exatamente 2 vértices têm grau ímpar.\n";
+      cout << "   → É possível percorrer TODAS as arestas exatamente uma vez,\n";
+      cout << "     começando em um vértice de grau ímpar e terminando no outro.\n";
+      cout << "   → Países de início/fim: " << nomeVertices[idsGrauImpar[0]]
+           << " ↔ " << nomeVertices[idsGrauImpar[1]] << '\n';
+      cout << "   → Aplicação: Rota de tradução que visita todas as conexões\n";
+      cout << "     linguísticas uma única vez (sem retornar ao início).\n";
+    } else {
+      cout << "   ✗ " << BOLD << "NEM CAMINHO NEM CICLO EULERIANO!" << RESET
+           << '\n';
+      cout << "   → Mais de 2 vértices têm grau ímpar (" << verticesGrauImpar
+           << " vértices).\n";
+      cout << "   → NÃO é possível percorrer todas as arestas exatamente uma\n";
+      cout << "     vez sem repetir algumas conexões.\n";
+      cout << "   → Aplicação: Qualquer rota completa de tradução precisará\n";
+      cout << "     revisitar algumas conexões linguísticas.\n";
+    }
+
+    cout << CYAN << "\n📚 TEORIA:\n" << RESET;
+    cout << "   • Teorema de Euler: Um grafo conexo tem ciclo euleriano ↔\n";
+    cout << "     todos os vértices têm grau par.\n";
+    cout << "   • Um grafo conexo tem caminho euleriano ↔ tem exatamente\n";
+    cout << "     0 ou 2 vértices de grau ímpar.\n";
+  }
+
+  void arvoreGeradoraMinimaPrim() {
+    if (!grafoCarregado())
+      return;
+
+    cout << MAGENTA << "\n╔════════════════════════════════════════════════════════════════╗\n"
+         << "║ 🌳  ÁRVORE GERADORA MÍNIMA (Algoritmo de Prim)                 ║\n"
+         << "╚════════════════════════════════════════════════════════════════╝\n"
+         << RESET;
+
+    // Verificar conectividade
+    auto componentes = componentesConexos();
+    bool conexo = componentes.size() <= 1;
+
+    if (!conexo) {
+      cout << RED << "❌ O grafo NÃO é conexo!" << RESET << '\n';
+      cout << YELLOW
+           << "   ⚠️  Não é possível gerar uma árvore geradora mínima para\n"
+           << "      um grafo desconexo. Cada componente teria sua própria AGM.\n"
+           << RESET;
+      cout << "   • Componentes conectados: " << componentes.size() << '\n';
+      return;
+    }
+
+    animacaoLoading("Calculando árvore geradora mínima...");
+
+    // Algoritmo de Prim
+    const int INF = numeric_limits<int>::max();
+    vector<bool> naMST(numVertices, false);
+    vector<int> chave(numVertices, INF);
+    vector<int> pai(numVertices, -1);
+
+    // Usar priority queue: (peso, vértice)
+    using Item = pair<int, int>;
+    priority_queue<Item, vector<Item>, greater<Item>> pq;
+
+    // Começar do vértice 0
+    int inicio = 0;
+    chave[inicio] = 0;
+    pq.push({0, inicio});
+
+    vector<tuple<int, int, int>> arestasMST; // (origem, destino, peso)
+    int pesoTotal = 0;
+
+    while (!pq.empty()) {
+      int u = pq.top().second;
+      pq.pop();
+
+      if (naMST[u])
+        continue;
+
+      naMST[u] = true;
+
+      // Adicionar aresta à MST (exceto o primeiro vértice)
+      if (pai[u] != -1) {
+        arestasMST.push_back({pai[u], u, chave[u]});
+        pesoTotal += chave[u];
+      }
+
+      // Explorar vizinhos
+      for (const auto &viz : adj[u]) {
+        int v = viz.first;
+        int peso = viz.second;
+
+        if (!naMST[v] && peso < chave[v]) {
+          chave[v] = peso;
+          pai[v] = u;
+          pq.push({chave[v], v});
+        }
+      }
+    }
+
+    // Calcular peso total do grafo original
+    int pesoTotalGrafo = 0;
+    set<pair<int, int>> arestasContadas;
+    for (int u = 0; u < numVertices; ++u) {
+      for (const auto &viz : adj[u]) {
+        int v = viz.first;
+        int peso = viz.second;
+        auto aresta = minmax(u, v);
+        if (arestasContadas.insert(aresta).second) {
+          pesoTotalGrafo += peso;
+        }
+      }
+    }
+
+    cout << GREEN << "✅ ÁRVORE GERADORA MÍNIMA CALCULADA!\n" << RESET;
+    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
+
+    cout << CYAN << "📊 ESTATÍSTICAS:\n" << RESET;
+    cout << "   • Peso total da AGM: " << BOLD << pesoTotal << RESET << '\n';
+    cout << "   • Peso total do grafo: " << pesoTotalGrafo << '\n';
+    cout << "   • Economia: " << (pesoTotalGrafo - pesoTotal) << " ("
+         << fixed << setprecision(1)
+         << (100.0 * (pesoTotalGrafo - pesoTotal) / pesoTotalGrafo) << "%)\n";
+    cout.unsetf(ios::fixed);
+    cout << setprecision(6);
+    cout << "   • Arestas na AGM: " << arestasMST.size() << '\n';
+    cout << "   • Arestas removidas: " << (numArestas - arestasMST.size())
+         << '\n';
+
+    cout << CYAN << "\n🌳 ARESTAS DA ÁRVORE GERADORA MÍNIMA:\n" << RESET;
+    cout << "   ┌──────────────────────────┬──────────────────────────┬────────┐\n";
+    cout << "   │ País A                   │ País B                   │  Peso  │\n";
+    cout << "   ├──────────────────────────┼──────────────────────────┼────────┤\n";
+
+    // Ordenar por peso para melhor visualização
+    sort(arestasMST.begin(), arestasMST.end(),
+         [](const auto &a, const auto &b) { return get<2>(a) < get<2>(b); });
+
+    for (const auto &aresta : arestasMST) {
+      int u = get<0>(aresta);
+      int v = get<1>(aresta);
+      int peso = get<2>(aresta);
+
+      cout << "   │ " << left << setw(24) << nomeVertices[u] << right << " │ "
+           << left << setw(24) << nomeVertices[v] << right << " │ " << setw(6)
+           << peso << " │\n";
+    }
+    cout << "   └──────────────────────────┴──────────────────────────┴────────┘\n";
+
+    cout << CYAN << "\n💡 INTERPRETAÇÃO:\n" << RESET;
+    cout << "   A Árvore Geradora Mínima representa a rede de conexões\n";
+    cout << "   linguísticas mais eficiente para conectar todos os países\n";
+    cout << "   com o MENOR CUSTO TOTAL possível.\n\n";
+
+    cout << "   🎯 Aplicação prática:\n";
+    cout << "   • Expansão linguística otimizada: conecte todos os países\n";
+    cout << "     usando apenas " << arestasMST.size()
+         << " conexões estratégicas.\n";
+    cout << "   • Economia de " << (pesoTotalGrafo - pesoTotal)
+         << " unidades em custos de tradução.\n";
+    cout << "   • Redução de "
+         << fixed << setprecision(1)
+         << (100.0 * (numArestas - arestasMST.size()) / numArestas)
+         << "% nas conexões necessárias.\n";
+    cout.unsetf(ios::fixed);
+    cout << setprecision(6);
+  }
 };
 
 static void solicitarEnter() {
@@ -1544,6 +1922,21 @@ int main() {
       } else {
         cout << RED << "❌ País não encontrado." << RESET << '\n';
       }
+      solicitarEnter();
+      break;
+    }
+    case 13: {
+      grafo.colorirGrafo();
+      solicitarEnter();
+      break;
+    }
+    case 14: {
+      grafo.analisarPropriedadesEulerianas();
+      solicitarEnter();
+      break;
+    }
+    case 15: {
+      grafo.arvoreGeradoraMinimaPrim();
       solicitarEnter();
       break;
     }
